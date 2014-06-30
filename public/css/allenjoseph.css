@@ -225,10 +225,15 @@ footer .footer-copyright label{
 		right: auto;
 		display: none;
 	}
+	nav ul.nav-right li{
+		border-bottom: 1px dashed #dfdfdf;
+	}
+	nav ul.nav-right li:last-child{
+		border-bottom: none;
+	}
 	nav ul li{
 		display: block;
 		padding-left: 15px;
-		border-bottom: 1px dashed #dfdfdf;
 	}
 	nav ul li i{
 		margin-right: 10px;
@@ -255,5 +260,9 @@ footer .footer-copyright label{
 		clear: both;
 		margin: 0;
 		text-align: center;
+	}
+
+	footer .footer-content .footer-box{
+		border: none;
 	}
 } 

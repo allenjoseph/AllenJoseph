@@ -22,6 +22,7 @@ $(document).ready(function(){
 	$('.nav-mobile-link').on('click', function(){
 		$(this).hide(function(){
 			$('.nav-mobile-close').css('display','inline-block');
+			$('nav ul.nav-left li').css('border-bottom','1px dashed #dfdfdf');
 			$('.nav-right').show();
 		});		
 	});
@@ -29,6 +30,7 @@ $(document).ready(function(){
 	$('.nav-mobile-close').on('click', function(){
 		$(this).hide(function(){
 			$('.nav-mobile-link').css('display','inline-block');
+			$('nav ul.nav-left li').css('border-bottom','none');
 			$('.nav-right').hide();
 		});	
 	});
