@@ -18,4 +18,18 @@ $(document).ready(function(){
 			}
 		});
 	})
+
+	$('.nav-mobile-link').on('click', function(){
+		$(this).hide(function(){
+			$('.nav-mobile-close').css('display','inline-block');
+			$('.nav-right').show();
+		});		
+	});
+
+	$('.nav-mobile-close').on('click', function(){
+		$(this).hide(function(){
+			$('.nav-mobile-link').css('display','inline-block');
+			$('.nav-right').hide();
+		});	
+	});
 });

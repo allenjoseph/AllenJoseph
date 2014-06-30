@@ -13,79 +13,123 @@
   <body>
     <nav>
       <ul class="nav-left">
-        <li class="nav-link-home"><i class="fa fa-star-half-o fa-fw"></i>&nbsp;Allen Joseph</li>
+        <li class="nav-link-home">
+          <i class="fa fa-star-half-o fa-fw nav-icon"></i>Allen Joseph<i class="fa fa-circle fa-fw nav-mobile-link"></i><i class="fa fa-circle-o fa-fw nav-mobile-close"></i>
+        </li>
       </ul>
       <ul class="nav-right">
-        <li><i class="fa fa-graduation-cap fa-fw"></i>&nbsp;Desarrollador&nbsp;&nbsp;</li>
-        <li><i class="fa fa-camera-retro fa-fw"></i>&nbsp;Social</li>
-        <li><i class="fa fa-bolt fa-fw"></i>&nbsp;Atleta</li>
+        <li><i class="fa fa-graduation-cap fa-fw nav-icon"></i>Developer</li>
+        <li><i class="fa fa-camera-retro fa-fw nav-icon"></i>Social</li>
+        <li><i class="fa fa-bolt fa-fw nav-icon"></i>Atleta</li>
       </ul>
     </nav>
     <hr/>
     <header>
-      <div class="large-9 medium-9 columns">
+      <div class="large-9 medium-8 columns">        
         <figure>
           <img src="img/social2.jpg" alt="Allen Joseph Developer">
         </figure>
-        <ul>
-          <li>
-            <h1>Allen Joseph</h1>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequuntur, voluptas quasi laborum a molestias ullam natus doloribus earum quam commodi deserunt, corporis ipsum esse harum dicta possimus saepe temporibus.</p>
-          </li>
-          <li>
-            <p><i class="fa fa-map-marker"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
-          </li>
-        </ul>
+        <div class="header-info">
+          <h1>Allen Joseph</h1>
+          <ul>
+            <li>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequuntur, voluptas quasi laborum a molestias ullam natus doloribus earum quam commodi deserunt, corporis ipsum esse harum dicta possimus saepe temporibus.</p>
+            </li>
+            <li>
+              <p><i class="fa fa-map-marker"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+            </li>
+          </ul>          
+        </div>        
       </div>     
-
-      <div class="large-3 medium-3 columns">
+      <div class="large-3 medium-4 columns">
+        <div class="panel">
+          <h5>This is a regular panel.</h5>
+          <p>It has an easy to override visual style, and is appropriately subdued.</p>
+          <button class="tiny expand">Hello</button>
+        </div>
       </div>
     </header>
     <hr/>
     <section>
-      <div class="large-12 columns">
-        <div class="statistic-box">
-          <h4 class="statistic-box-title">Front End</h4>
-          <div>
-            <ul>
-              <li class="statistic-box-category">Html</li>
-              <li class="statistic-box-category">Css</li>
-              <li class="statistic-box-category">Javascript</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li class="statistic-box-percentage" data-percentage="70" data-color="blue"></li>
-              <li class="statistic-box-percentage" data-percentage="60" data-color="blue"></li>
-              <li class="statistic-box-percentage" data-percentage="80" data-color="blue"></li>
-            </ul>
+      <h2>Developer</h2>
+      <div data-equalizer>
+        <div class="large-4 columns" data-equalizer-watch>
+          <div class="statistic-box">
+            <h4 class="statistic-box-title">Front End</h4>
+            <div>
+              <ul>
+                <li class="statistic-box-category">Html</li>
+                <li class="statistic-box-category">Css</li>
+                <li class="statistic-box-category">Javascript</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="statistic-box-percentage" data-percentage="70" data-color="blue"></li>
+                <li class="statistic-box-percentage" data-percentage="60" data-color="blue"></li>
+                <li class="statistic-box-percentage" data-percentage="80" data-color="blue"></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="statistic-box">
-          <h4 class="statistic-box-title">Back End</h4>
-          <div>
-            <ul>
-              <li class="statistic-box-category">Java</li>
-              <li class="statistic-box-category">C#</li>
-              <li class="statistic-box-category">Python</li>
-              <li class="statistic-box-category">NodeJS</li>
-            </ul>
+        <div class="large-4 columns" data-equalizer-watch>
+          <div class="statistic-box">
+            <h4 class="statistic-box-title">Back End</h4>
+            <div>
+              <ul>
+                <li class="statistic-box-category">Java</li>
+                <li class="statistic-box-category">C#</li>
+                <li class="statistic-box-category">Python</li>
+                <li class="statistic-box-category">NodeJS</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="statistic-box-percentage" data-percentage="75" data-color="green"></li>
+                <li class="statistic-box-percentage" data-percentage="35" data-color="green"></li>
+                <li class="statistic-box-percentage" data-percentage="40" data-color="green"></li>
+                <li class="statistic-box-percentage" data-percentage="55" data-color="green"></li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <ul>
-              <li class="statistic-box-percentage" data-percentage="75" data-color="green"></li>
-              <li class="statistic-box-percentage" data-percentage="35" data-color="green"></li>
-              <li class="statistic-box-percentage" data-percentage="50" data-color="green"></li>
-              <li class="statistic-box-percentage" data-percentage="55" data-color="green"></li>
-            </ul>
+        </div>
+        <div class="large-4 columns" data-equalizer-watch>
+          <div class="statistic-box">
+            <h4 class="statistic-box-title">Mobile</h4>
+            <div>
+              <ul>
+                <li class="statistic-box-category">Android</li>
+                <li class="statistic-box-category">iOS</li>
+                <li class="statistic-box-category">Responsive Desing</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="statistic-box-percentage" data-percentage="35" data-color="red"></li>
+                <li class="statistic-box-percentage" data-percentage="15" data-color="red"></li>
+                <li class="statistic-box-percentage" data-percentage="70" data-color="red"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <hr/>
-    <footer></footer>    
+    <footer>
+      <div class="footer-content">
+        <div class="large-4 columns footer-box">
+          <h5><i class="fa fa-graduation-cap fa-fw"></i>Developer</h5>
+        </div>
+        <div class="large-4 columns footer-box">
+          <h5><i class="fa fa-camera-retro fa-fw"></i>Social</h5>
+        </div>
+        <div class="large-4 columns footer-box">
+          <h5><i class="fa fa-bolt fa-fw"></i>Atleta</h5>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <label>Allen Joseph - 2014</label>
+      </div>
+    </footer>    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/allenjoseph.js"></script>
