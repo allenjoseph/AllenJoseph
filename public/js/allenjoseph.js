@@ -25,22 +25,20 @@ $(document).ready(function(){
 	/*-----------------------------------------------------------------------------*/
 
 	$('.nav-mobile-link').on('click', function(){
-		$(this).hide(function(){
-			$('.nav-mobile-close').css('display','inline-block');
-			$('nav ul.nav-left li').css('border-bottom','1px dashed #dfdfdf');
-			$('.nav-right').show();
-		});		
+		$(this).hide();		
+		$('.nav-mobile-close').css('display','inline-block');
+		$('nav ul.nav-left li').css('border-bottom','1px dashed #dfdfdf');
+		$('.nav-right').show();
 	});
 
 	$('.nav-mobile-close').on('click', function(){
-		$(this).hide(function(){
-			$('.nav-mobile-link').css('display','inline-block');
-			$('nav ul.nav-left li').css('border-bottom','none');
-			$('.nav-right').hide();
-		});	
+		$(this).hide();	
+		$('.nav-mobile-link').css('display','inline-block');
+		$('nav ul.nav-left li').css('border-bottom','none');
+		$('.nav-right').hide();
 	});
 
-	$('.nav-link-home').on('click',function(){
+	$('.nav-link-home > span').on('click',function(){
 		$('html, body').stop().animate({
 			'scrollTop': 0
 		}, 600, 'swing');
@@ -73,6 +71,10 @@ $(document).ready(function(){
 			$('html, body').stop().animate({
 				'scrollTop': section_top[index]
 			}, 600, 'swing');
+
+			if($(window).width() < 640 && $('.nav-right').is(':visible')) {
+				$('.nav-mobile-close').click();
+			}
 		})
 	});
 

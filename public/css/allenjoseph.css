@@ -311,13 +311,13 @@ footer .footer-copyright label{
 	}
 	nav ul li i.nav-mobile-link{
 		display: inline-block;
-		margin: 12px 0px 0px;
+		margin: 24px 0px 0px;
 		position: absolute;
 		right: 10px;
 	}
 	nav ul li i.nav-mobile-close{
 		display: none;
-		margin: 12px 0px 0px;
+		margin: 24px 0px 0px;
 		position: absolute;
 		right: 10px;
 	}
