@@ -6,6 +6,7 @@ html {
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background: #F4F4F4;
+	background-image: url('../img/whitediamond.png');
 }
 
 h1, h2, h3 {
@@ -139,6 +140,7 @@ header .header-info {
 
 .section-main {
 	background: #F4F4F4;
+	background-image: url('../img/whitediamond.png');
 	border-bottom: 1px solid #ddd;
 	display: block;
 	min-height: 500px;
