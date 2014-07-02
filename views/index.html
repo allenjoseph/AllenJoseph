@@ -11,6 +11,7 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+    <!--NAV==================================================================-->
     <nav>
       <ul class="nav-left">
         <li class="nav-link-home">
@@ -18,16 +19,18 @@
         </li>
       </ul>
       <ul class="nav-right">
-        <li><i class="fa fa-graduation-cap fa-fw nav-icon"></i>Developer</li>
-        <li><i class="fa fa-camera-retro fa-fw nav-icon"></i>Social</li>
-        <li><i class="fa fa-bolt fa-fw nav-icon"></i>Atleta</li>
+        <li data-section="section-developer"><i class="fa fa-graduation-cap fa-fw nav-icon"></i>Developer</li>
+        <li data-section="section-social"><i class="fa fa-camera-retro fa-fw nav-icon"></i>Social</li>
+        <li data-section="section-atleta"><i class="fa fa-bolt fa-fw nav-icon"></i>Atleta</li>
       </ul>
     </nav>
-    <hr/>
+    <!--HEADER===============================================================-->
     <header>
       <div class="large-9 medium-8 columns">        
         <figure>
-          <img src="img/social2.jpg" alt="Allen Joseph Developer">
+          <div>
+            <img src="img/social2.jpg" alt="Allen Joseph Developer">
+          </div>
         </figure>
         <div class="header-info">
           <h1>Allen Joseph</h1>
@@ -49,87 +52,101 @@
         </div>
       </div>
     </header>
-    <hr/>
-    <section>
-      <h2>Developer</h2>
-      <div data-equalizer>
-        <div class="large-4 columns" data-equalizer-watch>
-          <div class="statistic-box">
-            <h4 class="statistic-box-title">Front End</h4>
-            <div>
-              <ul>
-                <li class="statistic-box-category">Html</li>
-                <li class="statistic-box-category">Css</li>
-                <li class="statistic-box-category">Javascript</li>
-              </ul>
+    <!--DEVELOPER============================================================-->
+    <div class="main">
+      <section id="section-developer" class="section-main">
+        <h2>Developer</h2>
+        <div data-equalizer>
+          <div class="large-4 columns">
+            <div class="statistic-box" data-equalizer-watch>
+              <h4 class="statistic-box-title">Front End</h4>
+              <div>
+                <ul>
+                  <li class="statistic-box-category">Html</li>
+                  <li class="statistic-box-category">Css</li>
+                  <li class="statistic-box-category">Javascript</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="statistic-box-percentage" data-percentage="70" data-color="blue"></li>
+                  <li class="statistic-box-percentage" data-percentage="60" data-color="blue"></li>
+                  <li class="statistic-box-percentage" data-percentage="80" data-color="blue"></li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <ul>
-                <li class="statistic-box-percentage" data-percentage="70" data-color="blue"></li>
-                <li class="statistic-box-percentage" data-percentage="60" data-color="blue"></li>
-                <li class="statistic-box-percentage" data-percentage="80" data-color="blue"></li>
-              </ul>
+          </div>
+          <div class="large-4 columns">
+            <div class="statistic-box" data-equalizer-watch>
+              <h4 class="statistic-box-title">Back End</h4>
+              <div>
+                <ul>
+                  <li class="statistic-box-category">Java</li>
+                  <li class="statistic-box-category">C#</li>
+                  <li class="statistic-box-category">Python</li>
+                  <li class="statistic-box-category">NodeJS</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="statistic-box-percentage" data-percentage="75" data-color="orange"></li>
+                  <li class="statistic-box-percentage" data-percentage="35" data-color="orange"></li>
+                  <li class="statistic-box-percentage" data-percentage="40" data-color="orange"></li>
+                  <li class="statistic-box-percentage" data-percentage="55" data-color="orange"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="large-4 columns">
+            <div class="statistic-box" data-equalizer-watch>
+              <h4 class="statistic-box-title">Mobile</h4>
+              <div>
+                <ul>
+                  <li class="statistic-box-category">Android</li>
+                  <li class="statistic-box-category">iOS</li>
+                  <li class="statistic-box-category">Responsive Desing</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="statistic-box-percentage" data-percentage="35" data-color="red"></li>
+                  <li class="statistic-box-percentage" data-percentage="15" data-color="red"></li>
+                  <li class="statistic-box-percentage" data-percentage="70" data-color="red"></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="large-4 columns" data-equalizer-watch>
-          <div class="statistic-box">
-            <h4 class="statistic-box-title">Back End</h4>
-            <div>
-              <ul>
-                <li class="statistic-box-category">Java</li>
-                <li class="statistic-box-category">C#</li>
-                <li class="statistic-box-category">Python</li>
-                <li class="statistic-box-category">NodeJS</li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li class="statistic-box-percentage" data-percentage="75" data-color="green"></li>
-                <li class="statistic-box-percentage" data-percentage="35" data-color="green"></li>
-                <li class="statistic-box-percentage" data-percentage="40" data-color="green"></li>
-                <li class="statistic-box-percentage" data-percentage="55" data-color="green"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="large-4 columns" data-equalizer-watch>
-          <div class="statistic-box">
-            <h4 class="statistic-box-title">Mobile</h4>
-            <div>
-              <ul>
-                <li class="statistic-box-category">Android</li>
-                <li class="statistic-box-category">iOS</li>
-                <li class="statistic-box-category">Responsive Desing</li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li class="statistic-box-percentage" data-percentage="35" data-color="red"></li>
-                <li class="statistic-box-percentage" data-percentage="15" data-color="red"></li>
-                <li class="statistic-box-percentage" data-percentage="70" data-color="red"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      <!--SOCIAL===============================================================-->
+      <section id="section-social" class="section-main">
+        <h2>Social</h2>
+        <div data-equalizer></div>
+      </section>  
+      <!--ATLETA===============================================================-->
+      <section id="section-atleta" class="section-main">
+        <h2>Atleta</h2>
+        <div data-equalizer></div>
+      </section>  
+    </div>
+    <!--FOOTER===============================================================-->
     <footer>
       <div class="footer-content">
         <div class="large-4 columns footer-box">
-          <h5><i class="fa fa-graduation-cap fa-fw"></i>Developer</h5>
+          <h5><i class="fa fa-graduation-cap"></i>Developer</h5>
         </div>
         <div class="large-4 columns footer-box">
-          <h5><i class="fa fa-camera-retro fa-fw"></i>Social</h5>
+          <h5><i class="fa fa-camera-retro"></i>Social</h5>
         </div>
         <div class="large-4 columns footer-box">
-          <h5><i class="fa fa-bolt fa-fw"></i>Atleta</h5>
+          <h5><i class="fa fa-bolt"></i>Atleta</h5>
         </div>
       </div>
       <div class="footer-copyright">
         <label>Allen Joseph - 2014</label>
       </div>
     </footer>    
+    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/allenjoseph.js"></script>
