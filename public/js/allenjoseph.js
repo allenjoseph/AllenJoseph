@@ -78,9 +78,10 @@ $(document).ready(function(){
 		})
 	});
 
+	var footer_top = $('footer').offset().top - nav_height;
 	$(window).on('scroll', function(){
 		var window_top = $(window).scrollTop();
-
+		
 		if( window_top >= section_top[0] &&
 			window_top < section_top[1] ){
 			
@@ -94,7 +95,8 @@ $(document).ready(function(){
 			$('.nav-right li').removeClass('selected');
 			$($('.nav-right li')[1]).addClass('selected');
 
-		}else if(window_top >= section_top[2]){
+		}else if(window_top >= section_top[2] &&
+				 window_top < footer_top){
 
 			$('.nav-right li').removeClass('selected');
 			$($('.nav-right li')[2]).addClass('selected');
