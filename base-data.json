@@ -1,0 +1,141 @@
+{
+	"name" : "Allen Joseph",
+
+	"info" : {
+		"title" : "Allen Joseph",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequuntur, voluptas quasi laborum a molestias ullam natus doloribus earum quam commodi deserunt, corporis ipsum esse harum dicta possimus saepe temporibus.",
+		"direction" : "Lorem ipsum dolor sit amet.",
+		"avatar" : "img/social.jpg",
+		"social" : [
+			{
+				"name" : "LinkedIn",
+				"icon" : "img/social/LinkedIn.png",
+				"url" : "https://pe.linkedin.com/in/allenjosephvelascoarias"	
+			},
+			{
+				"name" : "GitHub",
+				"icon" : "img/social/GitHub.png",
+				"url" : "https://github.com/allenjoseph"	
+			},
+			{
+				"name" : "Google",
+				"icon" : "img/social/GooglePlus.png",
+				"url" : "https://www.google.com/+AllenJosephVelascoArias"	
+			},
+			{
+				"name" : "Facebook",
+				"icon" : "img/social/Facebook.png",
+				"url" : "https://www.facebook.com/A11en.Joseph"	
+			},
+			{
+				"name" : "Twitter",
+				"icon" : "img/social/Twitter.png",
+				"url" : "https://twitter.com/AllenJoseph"	
+			}
+		]
+	},
+
+	"menu" : [
+		{
+			"id" : "skills",
+			"name" : "Skills",
+			"icon" : "fa-graduation-cap"
+		},
+		{
+			"id" : "social",
+			"name" : "Social",
+			"icon" : "fa-camera-retro"
+		},
+		{
+			"id" : "atlete",
+			"name" : "Atlete",
+			"icon" : "fa-bolt"
+		}
+	],
+
+	"content" :[
+		{
+			"id" : "skills",
+			"title" : "Skills",
+			"description" : "",
+			"content" : [ 
+				{ 
+					"title" : "FrontEnd",
+					"content" : [
+						{
+							"title" : "Html5",
+							"porcentage" : 70,
+							"color" : "blue"
+						},
+						{
+							"title" : "Css",
+							"porcentage" : 60,
+							"color" : "blue"
+						},
+						{
+							"title" : "Javascript",
+							"porcentage" : 80,
+							"color" : "blue"
+						}
+					]
+				},
+				{
+					"title" : "BackEnd",
+					"content" : [
+						{
+							"title" : "Java",
+							"porcentage" : 75,
+							"color" : "orange"
+						},
+						{
+							"title" : "C#",
+							"porcentage" : 35,
+							"color" : "orange"
+						},
+						{
+							"title" : "Python",
+							"porcentage" : 35,
+							"color" : "orange"
+						},
+						{
+							"title" : "NodeJs",
+							"porcentage" : 55,
+							"color" : "orange"
+						}
+					]	
+				},
+				{
+					"title" : "Mobile",
+					"content" : [
+						{
+							"title" : "Android",
+							"porcentage" : 35,
+							"color" : "red"
+						},
+						{
+							"title" : "iOS",
+							"porcentage" : 15,
+							"color" : "red"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "social",
+			"title" : "Social",
+			"description" : "",
+			"content-box" : []
+		},
+		{
+			"id" : "atlete",
+			"title" : "Atlete",
+			"description" : "",
+			"content-box" : []
+		}
+	],
+
+	"footer" : {
+		"copyright" : "Allen Joseph - 2014"
+	}
+}

@@ -1,7 +1,11 @@
 var express = require('express'),
-    swig = require('swig');
+    swig = require('swig'),
+    fs = require('fs');
 
-var server = express();
+var server = express(),
+	baseData = fs.readFileSync('./base-data.json').toString();
+
+var data = JSON.parse(baseData);
 
 /* CONFIGURACION DE LAS VISTAS */
 server.engine( 'html', swig.renderFile );
@@ -21,7 +25,7 @@ server.configure(function(){
 
 /* Controllers ------------------------------------*/
 var indexController = require('./controllers/index');
-indexController(server);
+indexController(server, data);
 
 /*-------------------------------------------------*/
 server.listen(3030,function(){

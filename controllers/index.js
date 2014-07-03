@@ -1,7 +1,8 @@
-var indexController = function(server){
-
+var indexController = function(server, data){
+	
 	server.get('/', function(req, res){
-		res.render('index');
+
+		res.render('index', { app : data });
 	});
 };
 
