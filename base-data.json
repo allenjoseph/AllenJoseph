@@ -3,8 +3,8 @@
 
 	"info" : {
 		"title" : "Allen Joseph",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequuntur, voluptas quasi laborum a molestias ullam natus doloribus earum quam commodi deserunt, corporis ipsum esse harum dicta possimus saepe temporibus.",
-		"direction" : "Lorem ipsum dolor sit amet.",
+		"description" : "Ingeniero en Informática y Developer de corazón, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, amigable, sincero, algo picón (envidia benigna), pero consciente de que cada día se aprende algo nuevo.",
+		"direction" : "Lima, Peru - Cel: +51969784251",
 		"avatar" : "img/social.jpg",
 		"social" : [
 			{
@@ -48,7 +48,7 @@
 		},
 		{
 			"id" : "atlete",
-			"name" : "Atlete",
+			"name" : "Sports",
 			"icon" : "fa-bolt"
 		}
 	],
@@ -65,17 +65,17 @@
 						{
 							"title" : "Html5",
 							"porcentage" : 70,
-							"color" : "blue"
+							"color" : "lila"
 						},
 						{
 							"title" : "Css",
 							"porcentage" : 60,
-							"color" : "blue"
+							"color" : "lila"
 						},
 						{
 							"title" : "Javascript",
 							"porcentage" : 80,
-							"color" : "blue"
+							"color" : "lila"
 						}
 					]
 				},
@@ -85,37 +85,117 @@
 						{
 							"title" : "Java",
 							"porcentage" : 75,
-							"color" : "orange"
+							"color" : "rojo"
 						},
 						{
 							"title" : "C#",
 							"porcentage" : 35,
-							"color" : "orange"
+							"color" : "rojo"
 						},
 						{
 							"title" : "Python",
 							"porcentage" : 35,
-							"color" : "orange"
+							"color" : "rojo"
 						},
 						{
 							"title" : "NodeJs",
 							"porcentage" : 55,
-							"color" : "orange"
+							"color" : "rojo"
+						}
+					]	
+				},
+				{ 
+					"title" : "Data Bases",
+					"content" : [
+						{
+							"title" : "Oracle",
+							"porcentage" : 60,
+							"color" : "amarillo"
+						},
+						{
+							"title" : "Postgress",
+							"porcentage" : 30,
+							"color" : "amarillo"
+						},
+						{
+							"title" : "Mysql",
+							"porcentage" : 40,
+							"color" : "amarillo"
+						},
+						{
+							"title" : "MongoDB",
+							"porcentage" : 50,
+							"color" : "amarillo"
+						}
+					]
+				},
+				{ 
+					"title" : "FrontEnd Plus",
+					"content" : [
+						{
+							"title" : "Responsive Design",
+							"porcentage" : 70,
+							"color" : "naranja"
+						},
+						{
+							"title" : "Backbone.js",
+							"porcentage" : 60,
+							"color" : "naranja"
+						},
+						{
+							"title" : "Html Templates",
+							"porcentage" : 60,
+							"color" : "naranja"
+						},
+						{
+							"title" : "Bootstrap",
+							"porcentage" : 70,
+							"color" : "naranja"
+						},
+						{
+							"title" : "Foundation",
+							"porcentage" : 65,
+							"color" : "naranja"
+						}
+					]
+				},
+				{
+					"title" : "BackEnd Plus",
+					"content" : [
+						{
+							"title" : "Spring",
+							"porcentage" : 30,
+							"color" : "violeta"
+						},
+						{
+							"title" : "Django",
+							"porcentage" : 15,
+							"color" : "violeta"
+						},
+						{
+							"title" : "Express.js",
+							"porcentage" : 45,
+							"color" : "violeta"
 						}
 					]	
 				},
 				{
-					"title" : "Mobile",
+					"title" : "Mobile & Plus",
 					"content" : [
 						{
 							"title" : "Android",
 							"porcentage" : 35,
-							"color" : "red"
+							"color" : "azul"
 						},
 						{
 							"title" : "iOS",
 							"porcentage" : 15,
-							"color" : "red"
+							"color" : "azul"
+						},
+						{
+							"title" : "jQuery Mobile",
+							"porcentage" : 15,
+							"color" : "azul"
 						}
 					]
 				}
@@ -129,7 +209,7 @@
 		},
 		{
 			"id" : "atlete",
-			"title" : "Atlete",
+			"title" : "Sports",
 			"description" : "",
 			"content-box" : []
 		}

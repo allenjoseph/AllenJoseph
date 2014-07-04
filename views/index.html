@@ -68,29 +68,32 @@
       {% for content in app.content %}
       <section id="section-{{ content.id }}" class="section-main">
         <h2>{{ content.title }}</h2>
-        <div data-equalizer>
+        <hr/>
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
           {% for box in content.content %}
-          <div class="large-4 columns">
-            <div class="statistic-box" data-equalizer-watch>
-              <h4 class="statistic-box-title">{{ box.title }}</h4>
-              <div>
-                <ul>
-                  {% for category in box.content %}
-                  <li class="statistic-box-category">{{ category.title }}</li>                  
-                  {% endfor %}
-                </ul>
+          <li class="large-4 columns text-center">
+
+              <div class="statistic-box">
+                <h4 class="statistic-box-title">{{ box.title }}</h4>
+                <div>
+                  <ul>
+                    {% for category in box.content %}
+                    <li class="statistic-box-category">{{ category.title }}</li>                  
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    {% for category in box.content %}     
+                    <li class="statistic-box-percentage" data-percentage="{{ category.porcentage }}" data-color="{{ category.color }}"></li>
+                    {% endfor %}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <ul>
-                  {% for category in box.content %}     
-                  <li class="statistic-box-percentage" data-percentage="{{ category.porcentage }}" data-color="{{ category.color }}"></li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
+
+          </li>
           {% endfor %}
-        </div>
+        </ul>
       </section>  
       {% endfor %}
     </div>

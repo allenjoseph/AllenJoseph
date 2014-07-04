@@ -21,7 +21,8 @@ h4, h5, h6 {
 }
 hr {
 	border-color: #ddd;
-	margin: 0px;
+	margin: 10px 0px 20px;
+	border-style: dashed;
 }
 
 /*--------------------------------------------------------*/
@@ -189,7 +190,7 @@ header .social-icons{
 	display: inline-block;	
 	vertical-align: top;
 	padding: 0px 10px 30px;
-	border-bottom: 3px solid #ddd
+	border-bottom: 3px solid transparent;
 
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
@@ -227,7 +228,7 @@ header .social-icons{
 	border: 1px solid #DFDFDF;
 	cursor: pointer;
 }
-
+/*
 .statistic-box-percentage span.blue{
 	background: #5aaadb;
   	border-color: #459fd6 #3094d2 #277db2;
@@ -261,6 +262,72 @@ header .social-icons{
 	background-image: -moz-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
 	background-image: -o-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
 	background-image: linear-gradient(to bottom, #b7dc8e, #99ce5f 70%, #85c440);
+}*/
+
+
+.statistic-box-percentage span.lila{
+	background: #913ccd;
+	border-color: #913ccd #913ccd #913ccd;
+	background-image: -webkit-linear-gradient(top, #913ccd, #913ccd 70%, #913ccd);
+	background-image: -moz-linear-gradient(top, #913ccd, #913ccd 70%, #913ccd);
+	background-image: -o-linear-gradient(top, #913ccd, #913ccd 70%, #913ccd);
+	background-image: linear-gradient(to bottom, #913ccd, #913ccd 70%, #913ccd);
+}
+.statistic-box-percentage span.rojo{
+	background: #f26075;
+	border-color: #f26075 #f26075 #f26075;
+	background-image: -webkit-linear-gradient(top, #f26075, #f26075 70%, #f26075);
+	background-image: -moz-linear-gradient(top, #f26075, #f26075 70%, #f26075);
+	background-image: -o-linear-gradient(top, #f26075, #f26075 70%, #f26075);
+	background-image: linear-gradient(to bottom, #f26075, #f26075 70%, #f26075);
+}
+.statistic-box-percentage span.naranja{
+	background: #f76d3e;
+	border-color: #f76d3e #f76d3e #f76d3e;
+	background-image: -webkit-linear-gradient(top, #f76d3e, #f76d3e 70%, #f76d3e);
+	background-image: -moz-linear-gradient(top, #f76d3e, #f76d3e 70%, #f76d3e);
+	background-image: -o-linear-gradient(top, #f76d3e, #f76d3e 70%, #f76d3e);
+	background-image: linear-gradient(to bottom, #f76d3e, #f76d3e 70%, #f76d3e);
+}
+.statistic-box-percentage span.amarillo{
+	background: #f7d842;
+	border-color: #f7d842 #f7d842 #f7d842;
+	background-image: -webkit-linear-gradient(top, #f7d842, #f7d842 70%, #f7d842);
+	background-image: -moz-linear-gradient(top, #f7d842, #f7d842 70%, #f7d842);
+	background-image: -o-linear-gradient(top, #f7d842, #f7d842 70%, #f7d842);
+	background-image: linear-gradient(to bottom, #f7d842, #f7d842 70%, #f7d842);
+}
+.statistic-box-percentage span.violeta{
+	background: #2ca8c2;
+	border-color: #2ca8c2 #2ca8c2 #2ca8c2;
+	background-image: -webkit-linear-gradient(top, #2ca8c2, #2ca8c2 70%, #2ca8c2);
+	background-image: -moz-linear-gradient(top, #2ca8c2, #2ca8c2 70%, #2ca8c2);
+	background-image: -o-linear-gradient(top, #2ca8c2, #2ca8c2 70%, #2ca8c2);
+	background-image: linear-gradient(to bottom, #2ca8c2, #2ca8c2 70%, #2ca8c2);
+}
+.statistic-box-percentage span.verde{
+	background: #98cb4a;
+	border-color: #98cb4a #98cb4a #98cb4a;
+	background-image: -webkit-linear-gradient(top, #98cb4a, #98cb4a 70%, #98cb4a);
+	background-image: -moz-linear-gradient(top, #98cb4a, #98cb4a 70%, #98cb4a);
+	background-image: -o-linear-gradient(top, #98cb4a, #98cb4a 70%, #98cb4a);
+	background-image: linear-gradient(to bottom, #98cb4a, #98cb4a 70%, #98cb4a);
+}
+.statistic-box-percentage span.azul{
+	background: #5481e6;
+	border-color: #5481e6 #5481e6 #5481e6;
+	background-image: -webkit-linear-gradient(top, #5481e6, #5481e6 70%, #5481e6);
+	background-image: -moz-linear-gradient(top, #5481e6, #5481e6 70%, #5481e6);
+	background-image: -o-linear-gradient(top, #5481e6, #5481e6 70%, #5481e6);
+	background-image: linear-gradient(to bottom, #5481e6, #5481e6 70%, #5481e6);
+}
+.statistic-box-percentage span.plomo{
+	background: #849199;
+	border-color: #849199 #849199 #849199;
+	background-image: -webkit-linear-gradient(top, #849199, #849199 70%, #849199);
+	background-image: -moz-linear-gradient(top, #849199, #849199 70%, #849199);
+	background-image: -o-linear-gradient(top, #849199, #849199 70%, #849199);
+	background-image: linear-gradient(to bottom, #849199, #849199 70%, #849199);
 }
 
 /*--------------------------------------------------------*/
