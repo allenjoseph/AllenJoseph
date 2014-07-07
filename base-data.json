@@ -205,13 +205,76 @@
 			"id" : "social",
 			"title" : "Social",
 			"description" : "",
-			"content-box" : []
+			"content" : [
+				{
+					"title" : "LinkedIn",
+					"id" : "linkedin"
+				},
+				{
+					"title" : "Twitter",
+					"id" : "twitter"
+				},
+				{
+					"title" : "Google",
+					"id" : "google"
+				}
+			]
 		},
 		{
 			"id" : "atlete",
 			"title" : "Sports",
 			"description" : "",
-			"content-box" : []
+			"content" : [
+				{
+					"id" : "parkour",
+					"title" : "Parkour",
+					"url" : "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
+					"img" : "http://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
+				},
+				{
+					"id" : "tricks",
+					"title" : "Tricks",
+					"url" : "//www.youtube.com/embed/WRGTkK8YPX8?rel=0",
+					"img" : "http://img.youtube.com/vi/WRGTkK8YPX8/0.jpg"
+
+				},
+				{
+					"id" : "breakdance",
+					"title" : "BreakDance",
+					"url" : "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
+					"img" : "http://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
+				},
+				{
+					"id" : "skate",
+					"title" : "Skateboarding",
+					"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
+					"img" : "http://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
+				},
+				{
+					"id" : "bmx",
+					"title" : "BMX",
+					"url" : "//www.youtube.com/embed/c62xOhW3F74?rel=0",
+					"img" : "http://img.youtube.com/vi/c62xOhW3F74/0.jpg"
+				},
+				{
+					"id" : "inline",
+					"title" : "Inline Skates",
+					"url" : "//www.youtube.com/embed/uKRPEH03B8c?rel=0",
+					"img" : "http://img.youtube.com/vi/uKRPEH03B8c/0.jpg"
+				},
+				{
+					"id" : "inline",
+					"title" : "Football FreeStyle",
+					"url" : "//www.youtube.com/embed/Cp6ylH80wOQ?rel=0",
+					"img" : "http://img.youtube.com/vi/Cp6ylH80wOQ/0.jpg"
+				},
+				{
+					"id" : "mma",
+					"title" : "MMA",
+					"url" : "//www.youtube.com/embed/WWGSf800vZ8?rel=0",
+					"img" : "http://img.youtube.com/vi/WWGSf800vZ8/0.jpg"
+				}
+			]
 		}
 	],
 

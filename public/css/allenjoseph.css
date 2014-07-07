@@ -32,7 +32,7 @@ nav {
 	height: 80px;
 	position: fixed;
 	width: 100%;
-	z-index: 9999;
+	z-index: 30;
 }
 
 nav ul {
@@ -153,7 +153,7 @@ header .social-icons{
 	position: relative;
 	overflow: auto;
 	width: 100%;
-	z-index: 99;
+	z-index: 10;
 }
 
 .section-main {
@@ -166,15 +166,6 @@ header .social-icons{
 	padding: 20px;
 	position: relative;
 	width: 100%;
-}
-#section-skills{
-	z-index: 10;
-}
-#section-social{
-	z-index: 11;
-}
-#section-atleta{
-	z-index: 12;
 }
 
 .section-main > h2 {
@@ -293,10 +284,22 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #849199, #849199 70%, #849199);
 	background-image: linear-gradient(to bottom, #849199, #849199 70%, #849199);
 }
+.social-box figure{
+	margin: 0px;
+	overflow: hidden;
+	cursor: pointer;
+}
 
+.social-box figure img{
+	-webkit-filter: blur(1px) grayscale(0.9);
+}
+
+.social-box figure img:hover{
+	-webkit-filter: brightness(1.2);
+}
 /*--------------------------------------------------------*/
 footer {
-	z-index: 999;
+	z-index: 20;
 	position: relative;
 	background: transparent;
 	top: 350px;
