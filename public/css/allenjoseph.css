@@ -27,12 +27,21 @@ hr {
 
 /*--------------------------------------------------------*/
 nav {
-	background: #fff;
-	border-bottom: 1px solid #ddd;
+	background: transparent;
+	border-bottom: 1px solid transparent;
+	color: #fff;
 	height: 80px;
 	position: fixed;
 	width: 100%;
 	z-index: 30;
+	transition: background-color 0.3s ease;
+	-webkit-transition: background-color 0.3s ease;
+}
+
+nav.active {
+	color: inherit;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -49,6 +58,10 @@ nav ul.nav-left li{
 	font-size: 28px;
 	padding-left: 10px;
 	color: inherit;
+	border-bottom: none;
+}
+nav ul.nav-left li.active{
+	border-bottom: 1px dashed #dfdfdf;
 }
 
 nav ul.nav-right {
@@ -88,7 +101,7 @@ nav ul li i.nav-mobile-close{
 /*--------------------------------------------------------*/
 header {
 	background: #001f27;
-	padding: 100px 20px 20px;
+	padding: 80px 20px 20px;
 	overflow: hidden;
 	color: #fafbf3;
 	position: fixed;
@@ -100,8 +113,8 @@ header .pattern{
 	background-image: url('../img/pattern2.png');
 	-webkit-filter: blur(1.5px) opacity(1.0);
 	position: absolute;
-	margin-top: -20px;
-	margin-left: -20px;
+	top: 0;
+	left: 0;
 	width: inherit;
 	height: inherit;
 }
@@ -135,7 +148,7 @@ header ul {
 
 header .header-info {
 	margin-left: 220px;
-	padding: 20px 30px;
+	padding: 5px 30px;
 }
 
 header .header-info h1{
