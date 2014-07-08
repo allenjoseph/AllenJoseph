@@ -249,30 +249,6 @@
 					"title" : "Skateboarding",
 					"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
 					"img" : "http://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
-				},
-				{
-					"id" : "bmx",
-					"title" : "BMX",
-					"url" : "//www.youtube.com/embed/c62xOhW3F74?rel=0",
-					"img" : "http://img.youtube.com/vi/c62xOhW3F74/0.jpg"
-				},
-				{
-					"id" : "inline",
-					"title" : "Inline Skates",
-					"url" : "//www.youtube.com/embed/uKRPEH03B8c?rel=0",
-					"img" : "http://img.youtube.com/vi/uKRPEH03B8c/0.jpg"
-				},
-				{
-					"id" : "inline",
-					"title" : "Football FreeStyle",
-					"url" : "//www.youtube.com/embed/Cp6ylH80wOQ?rel=0",
-					"img" : "http://img.youtube.com/vi/Cp6ylH80wOQ/0.jpg"
-				},
-				{
-					"id" : "mma",
-					"title" : "MMA",
-					"url" : "//www.youtube.com/embed/WWGSf800vZ8?rel=0",
-					"img" : "http://img.youtube.com/vi/WWGSf800vZ8/0.jpg"
 				}
 			]
 		}
