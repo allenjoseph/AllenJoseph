@@ -47,7 +47,7 @@
 			"icon" : "fa-camera-retro"
 		},
 		{
-			"id" : "atlete",
+			"id" : "sports",
 			"name" : "Sports",
 			"icon" : "fa-bolt"
 		}
@@ -221,7 +221,7 @@
 			]
 		},
 		{
-			"id" : "atlete",
+			"id" : "sports",
 			"title" : "Sports",
 			"description" : "",
 			"content" : [
@@ -229,32 +229,134 @@
 					"id" : "parkour",
 					"title" : "Parkour",
 					"url" : "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
-					"img" : "http://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
+					"img" : "https://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
 				},
 				{
 					"id" : "tricks",
 					"title" : "Tricks",
-					"url" : "//www.youtube.com/embed/WRGTkK8YPX8?rel=0",
-					"img" : "http://img.youtube.com/vi/WRGTkK8YPX8/0.jpg"
+					"url" : "//www.youtube.com/embed/rZW2bT4Hp0U?rel=0",
+					"img" : "https://img.youtube.com/vi/rZW2bT4Hp0U/0.jpg"
 
 				},
 				{
 					"id" : "breakdance",
 					"title" : "BreakDance",
 					"url" : "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
-					"img" : "http://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
+					"img" : "https://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
 				},
 				{
 					"id" : "skate",
 					"title" : "Skateboarding",
 					"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
-					"img" : "http://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
+					"img" : "https://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
 				}
 			]
 		}
 	],
 
 	"footer" : {
-		"copyright" : "Allen Joseph - 2014"
+		"copyright" : "Allen Joseph - 2014",
+		"content" : [
+			{
+				"id" : "footer-skills",
+				"title" : "Skills",
+				"icon" : "fa-graduation-cap",
+				"description" : "",
+				"content" : [
+					{
+						"title" : "FrontEnd",
+						"porcentage" : 70,
+						"color" : "lila"
+					},
+					{
+						"title" : "FrontEndPlus",
+						"porcentage" : 65,
+						"color" : "naranja"
+					},
+					{
+						"title" : "BackEnd",
+						"porcentage" : 50,
+						"color" : "rojo"
+					},
+					{
+						"title" : "BackEndPlus",
+						"porcentage" : 30,
+						"color" : "violeta"
+					},
+					{
+						"title" : "Mobile",
+						"porcentage" : 22,
+						"color" : "azul"
+					},
+					{
+						"title" : "DataBases",
+						"porcentage" : 45,
+						"color" : "amarillo"
+					}
+				]
+			},
+			{
+				"id" : "footer-social",
+				"title" : "Social",
+				"icon" : "fa-camera-retro",
+				"description" : "",
+				"content" : [
+					{
+						"title" : "LinkedIn",
+						"icon" : "img/social/circle/LinkedIn.png",
+						"url" : "https://pe.linkedin.com/in/allenjosephvelascoarias"	
+					},
+					{
+						"title" : "GitHub",
+						"icon" : "img/social/circle/GitHub.png",
+						"url" : "https://github.com/allenjoseph"	
+					},
+					{
+						"title" : "Google",
+						"icon" : "img/social/circle/GooglePlus.png",
+						"url" : "https://www.google.com/+AllenJosephVelascoArias"	
+					},
+					{
+						"title" : "Facebook",
+						"icon" : "img/social/circle/Facebook.png",
+						"url" : "https://www.facebook.com/A11en.Joseph"	
+					},
+					{
+						"title" : "Twitter",
+						"icon" : "img/social/circle/Twitter.png",
+						"url" : "https://twitter.com/AllenJoseph"	
+					}
+				]
+			},
+			{
+				"id" : "footer-sports",
+				"title" : "Sports",
+				"icon" : "fa-bolt",
+				"description" : "",
+				"content" : [
+					{
+						"title" : "Parkour",
+						"url" : "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
+						"icon" : "img/social/circle/YouTube.png"
+					},
+					{
+						"title" : "Tricks",
+						"url" : "//www.youtube.com/embed/rZW2bT4Hp0U?rel=0",
+						"icon" : "img/social/circle/YouTube.png"
+
+					},
+					{
+						"title" : "BreakDance",
+						"url" : "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
+						"icon" : "img/social/circle/YouTube.png"
+					},
+					{
+						"title" : "Skateboarding",
+						"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
+						"icon" : "img/social/circle/YouTube.png"
+					}
+				]
+			}
+		]
 	}
 }

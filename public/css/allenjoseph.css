@@ -55,7 +55,7 @@ nav ul.nav-left {
 }
 
 nav ul.nav-left li{
-	font-size: 28px;
+	font-size: 1.75em;
 	padding-left: 10px;
 	color: inherit;
 	border-bottom: none;
@@ -74,7 +74,7 @@ nav ul.nav-right li.selected{
 nav ul li {
 	cursor: pointer;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 1.25em;
 	line-height: 75px;
 	padding-right: 30px;
 	-webkit-transition: all 0.1s linear;
@@ -233,7 +233,7 @@ header .social-icons{
 	cursor: pointer;
 }
 
-.statistic-box-percentage span.lila{
+.statistic-box-percentage span.lila, .lila{
 	background: #913ccd;
 	border-color: #913ccd #913ccd #913ccd;
 	background-image: -webkit-linear-gradient(top, #913ccd, #913ccd 70%, #913ccd);
@@ -241,7 +241,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #913ccd, #913ccd 70%, #913ccd);
 	background-image: linear-gradient(to bottom, #913ccd, #913ccd 70%, #913ccd);
 }
-.statistic-box-percentage span.rojo{
+.statistic-box-percentage span.rojo, .rojo{
 	background: #f26075;
 	border-color: #f26075 #f26075 #f26075;
 	background-image: -webkit-linear-gradient(top, #f26075, #f26075 70%, #f26075);
@@ -249,7 +249,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #f26075, #f26075 70%, #f26075);
 	background-image: linear-gradient(to bottom, #f26075, #f26075 70%, #f26075);
 }
-.statistic-box-percentage span.naranja{
+.statistic-box-percentage span.naranja, .naranja{
 	background: #f76d3e;
 	border-color: #f76d3e #f76d3e #f76d3e;
 	background-image: -webkit-linear-gradient(top, #f76d3e, #f76d3e 70%, #f76d3e);
@@ -257,7 +257,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #f76d3e, #f76d3e 70%, #f76d3e);
 	background-image: linear-gradient(to bottom, #f76d3e, #f76d3e 70%, #f76d3e);
 }
-.statistic-box-percentage span.amarillo{
+.statistic-box-percentage span.amarillo, .amarillo{
 	background: #f7d842;
 	border-color: #f7d842 #f7d842 #f7d842;
 	background-image: -webkit-linear-gradient(top, #f7d842, #f7d842 70%, #f7d842);
@@ -265,7 +265,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #f7d842, #f7d842 70%, #f7d842);
 	background-image: linear-gradient(to bottom, #f7d842, #f7d842 70%, #f7d842);
 }
-.statistic-box-percentage span.violeta{
+.statistic-box-percentage span.violeta, .violeta{
 	background: #2ca8c2;
 	border-color: #2ca8c2 #2ca8c2 #2ca8c2;
 	background-image: -webkit-linear-gradient(top, #2ca8c2, #2ca8c2 70%, #2ca8c2);
@@ -273,7 +273,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #2ca8c2, #2ca8c2 70%, #2ca8c2);
 	background-image: linear-gradient(to bottom, #2ca8c2, #2ca8c2 70%, #2ca8c2);
 }
-.statistic-box-percentage span.verde{
+.statistic-box-percentage span.verde, .verde{
 	background: #98cb4a;
 	border-color: #98cb4a #98cb4a #98cb4a;
 	background-image: -webkit-linear-gradient(top, #98cb4a, #98cb4a 70%, #98cb4a);
@@ -281,7 +281,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #98cb4a, #98cb4a 70%, #98cb4a);
 	background-image: linear-gradient(to bottom, #98cb4a, #98cb4a 70%, #98cb4a);
 }
-.statistic-box-percentage span.azul{
+.statistic-box-percentage span.azul, .azul{
 	background: #5481e6;
 	border-color: #5481e6 #5481e6 #5481e6;
 	background-image: -webkit-linear-gradient(top, #5481e6, #5481e6 70%, #5481e6);
@@ -289,7 +289,7 @@ header .social-icons{
 	background-image: -o-linear-gradient(top, #5481e6, #5481e6 70%, #5481e6);
 	background-image: linear-gradient(to bottom, #5481e6, #5481e6 70%, #5481e6);
 }
-.statistic-box-percentage span.plomo{
+.statistic-box-percentage span.plomo, .plomo{
 	background: #849199;
 	border-color: #849199 #849199 #849199;
 	background-image: -webkit-linear-gradient(top, #849199, #849199 70%, #849199);
@@ -310,8 +310,17 @@ header .social-icons{
 .social-box figure img:hover{
 	-webkit-filter: brightness(1.2);
 }
+.flex-video-new {
+	position: relative;
+	padding-top: 1.5625rem;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
 /*--------------------------------------------------------*/
 footer {
+	color: #bbb;
 	z-index: 20;
 	position: relative;
 	background: transparent;
@@ -325,15 +334,29 @@ footer .footer-content{
 }
 
 footer .footer-content .footer-box{
-	border-right: 1px dashed #555;
+	height: 100%;
+	border-right: 1px dashed #572D6E;
 }
 footer .footer-content .footer-box:last-child{
 	border-right: none;
 }
 
-footer .footer-content h5{
+footer .footer-content .footer-box h3{
 	color: #bbb;
 	text-align: center;
+}
+
+footer .footer-content .footer-box > div{
+	text-align: center;
+}
+
+footer .footer-content .footer-box ul {
+	list-style: none;
+}
+
+footer .footer-content .footer-box ul li{
+	font-size: 1.125em;
+	padding-bottom: 0px;
 }
 
 footer .footer-content .footer-box i {
@@ -347,12 +370,46 @@ footer .footer-copyright{
 
 footer .footer-copyright label{
 	color: #ccc;
-	font-size: 14px;
+	font-size: 0.875em;
 	line-height: 30px;
 	text-align: center;
 }
 
+footer .circle{
+	border-radius: 50%;
+	padding: 0px 14px;
+	line-height: 42px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	box-shadow: 1px 2px rgba(0,0,0,0.4);
+	-moz-box-shadow: 1px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 1px 2px rgba(0,0,0,0.4); 
+	-o-box-shadow: 1px 2px rgba(0,0,0,0.4);
+}
+
 /*--------------------------------------------------------*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	header .social-icons {
+		padding-top: 20px;
+	}
+
+	header .header-info h1 {
+		font-size: 2.2em;
+	}
+
+	header .header-info p{
+		font-size: 0.9em;
+	}
+
+	header .social-icons ul li img{
+		max-height: 32px;
+		max-width: 32px;
+	}
+}
+
+/*--------------------------------------------------------*/
+
 @media only screen and (max-width: 40em) {
 	nav {
 		height: auto;
@@ -416,7 +473,33 @@ footer .footer-copyright label{
 		padding-top: 20px
 	}
 
+	header .social-icons ul li img{
+		max-height: 45px;
+		max-width: 45px;
+	}
+
 	footer .footer-content .footer-box{
-		border: none;
+		border-right: none;
+		height: initial;
+		padding: 5px 0px 15px;
+		border-bottom: 1px dashed #572D6E;
+	}
+	
+	footer .footer-content .footer-box ul li{
+		font-size: 1em;
+	}
+	footer .circle{
+		padding: 0px 7px;
+		line-height: 32px;
+		cursor: pointer;
+	}
+
+	footer .footer-circle{
+		line-height: 35px;
+	}
+
+	footer .footer-icon{
+		height: 32px;
+		width: 32px;
 	}
 } 

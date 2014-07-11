@@ -39,7 +39,7 @@
     <!--===============================================================-->
     <header>
       <div class="pattern"></div>
-      <div class="large-9 medium-8 columns">        
+      <div class="large-9 medium-11 columns">        
         <figure>
           <div>
             <img src="{{ app.info.avatar }}" alt="{{ app.info.title }}">
@@ -57,9 +57,9 @@
           </ul>          
         </div>        
       </div>     
-      <div class="large-3 medium-4 columns">
+      <div class="large-3 medium-1 columns">
         <div class="social-icons">
-          <ul class="small-block-grid-5 medium-block-grid-5 large-block-grid-5">
+          <ul class="small-block-grid-5 medium-block-grid-1 large-block-grid-5">
             {% for link in app.info.social %}
             <li>
               <a href="{{ link.url }}" target="_blank" class="pulse-grow">
@@ -84,7 +84,7 @@
             <li class="small-12 medium-6 large-4 columns text-center">
 
                 <div class="statistic-box">
-                  <h4 class="statistic-box-title">{{ box.title }}</h4>
+                  <h3 class="statistic-box-title">{{ box.title }}</h3>
                   <div>
                     <ul>
                       {% for category in box.content %}
@@ -137,7 +137,7 @@
             </li>
             {% endfor %}
           </ul>
-          {% elseif content.id == 'atlete' %}
+          {% elseif content.id == 'sports' %}
           <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
             {% for box in content.content %}
             <li class="small-12 medium-6 large-3 columns text-center">
@@ -165,9 +165,27 @@
     <!--===============================================================-->
     <footer>
       <div class="footer-content">
-        {% for menu in app.menu %}
-        <div class="large-4 columns footer-box">
-          <h5><i class="fa {{ menu.icon }}"></i>{{ menu.name }}</h5>
+        {% for content in app.footer.content %}
+        <div class="medium-4 large-4 columns footer-box">
+          <h3>
+              <i class="fa {{ content.icon }}"></i>{{ content.title }}
+          </h3>
+          <div>
+            <ul class="small-block-grid-4 medium-block-grid-2 large-block-grid-1">
+              {% for content in content.content %}
+              <li class="small-3 medium-6 large-12 columns text-center">{{ content.title }}</li>
+              {% if content.porcentage %}
+              <li class="footer-circle"><span class="circle {{ content.color }} pulse-grow">{{ content.porcentage }}</span></li>
+              {% elseif content.icon %}
+              <li>
+                <a href="{{ content.url }}" target="_blank" class="pulse-grow">
+                  <img class="footer-icon" src="{{ content.icon }}" alt=""/>
+                </a>
+              </li>
+              {% endif %}              
+              {% endfor %}
+            </ul>
+          </div>
         </div>
         {% endfor %}
       </div>
