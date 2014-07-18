@@ -1,6 +1,8 @@
 {
 	"name" : "Allen Joseph",
 
+	"favicon" : "img/favicon.png",
+
 	"info" : {
 		"title" : "Allen Joseph",
 		"description" : "Ingeniero en Informática y Developer de corazón, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, amigable, sincero, algo picón (envidia benigna), pero consciente de que cada día se aprende algo nuevo.",
@@ -48,7 +50,7 @@
 		},
 		{
 			"id" : "sports",
-			"name" : "Sports",
+			"name" : "Ocio",
 			"icon" : "fa-bolt"
 		}
 	],
@@ -222,7 +224,7 @@
 		},
 		{
 			"id" : "sports",
-			"title" : "Sports",
+			"title" : "Ocio",
 			"description" : "",
 			"content" : [
 				{
@@ -330,7 +332,7 @@
 			},
 			{
 				"id" : "footer-sports",
-				"title" : "Sports",
+				"title" : "Ocio",
 				"icon" : "fa-bolt",
 				"description" : "",
 				"content" : [
