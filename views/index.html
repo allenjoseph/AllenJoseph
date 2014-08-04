@@ -59,6 +59,13 @@
         </div>        
       </div>     
       <div class="large-3 medium-1 columns">
+        <div class="feeds">
+          <ul>
+            {% for feed in feeds %}
+            <li><a href="{{ feed.link }}" target="_blank">{{ feed.title }}&nbsp;<i class="fa fa-angle-double-right"></i></a></li>
+            {% endfor %}
+          </ul>
+        </div>
         <div class="social-icons">
           <ul class="small-block-grid-5 medium-block-grid-1 large-block-grid-5">
             {% for link in app.info.social %}
