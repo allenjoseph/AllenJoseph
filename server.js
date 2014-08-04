@@ -39,10 +39,15 @@ server.configure(function(){
 		})
 		.on('readable', function() {
 			var stream = this, item;
-			while (item = stream.read()) {
+			while (item = stream.read()) {		
+				var item_url = item.description.substr(item.description.lastIndexOf('src=')).split('"',2)[1];
+				var item_description = item.description.substr(item.description.lastIndexOf('<p class="first-text">'));
 				feed_item = {
+					'id' : item.guid,
 					'title' : item.title,
-					'link' : item.link
+					'link' : item.link,
+					'image' : item_url,
+					'description' : item_description
 				}
 				feeds.push(feed_item);
 			}

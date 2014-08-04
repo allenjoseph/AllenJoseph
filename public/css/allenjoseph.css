@@ -226,9 +226,8 @@ header .feeds li a{
 	text-align: center;
 }
 
-.section-main > div {
-	overflow: auto;
-	padding: 20px 0px;
+.videoboxs {
+	padding-top: 20px;
 }
 
 .statistic-box {
@@ -338,6 +337,21 @@ header .feeds li a{
 	background-image: -o-linear-gradient(top, #849199, #849199 70%, #849199);
 	background-image: linear-gradient(to bottom, #849199, #849199 70%, #849199);
 }
+
+.feed-box {
+	position: relative;
+}
+
+.feed-box > img{
+	float: left;
+	margin-right: 15px;
+	width: 200px;
+}
+
+.feed-box p{
+	margin-bottom: 0;
+}
+
 .social-box figure{
 	margin: 0px;
 	overflow: hidden;
@@ -527,6 +541,11 @@ footer .circle{
 	header .social-icons ul li img{
 		max-height: 45px;
 		max-width: 45px;
+	}
+
+	.feed-box > img{
+		float: initial;
+		margin: auto;
 	}
 
 	footer .footer-content .footer-box{
