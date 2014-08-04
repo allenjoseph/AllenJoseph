@@ -86,7 +86,7 @@
 					"content" : [
 						{
 							"title" : "Java",
-							"porcentage" : 75,
+							"porcentage" : 65,
 							"color" : "rojo"
 						},
 						{
@@ -111,7 +111,7 @@
 					"content" : [
 						{
 							"title" : "Oracle",
-							"porcentage" : 60,
+							"porcentage" : 50,
 							"color" : "amarillo"
 						},
 						{
@@ -121,12 +121,12 @@
 						},
 						{
 							"title" : "Mysql",
-							"porcentage" : 40,
+							"porcentage" : 35,
 							"color" : "amarillo"
 						},
 						{
 							"title" : "MongoDB",
-							"porcentage" : 50,
+							"porcentage" : 40,
 							"color" : "amarillo"
 						}
 					]
@@ -166,17 +166,17 @@
 					"content" : [
 						{
 							"title" : "Spring",
-							"porcentage" : 30,
+							"porcentage" : 25,
 							"color" : "violeta"
 						},
 						{
 							"title" : "Django",
-							"porcentage" : 15,
+							"porcentage" : 20,
 							"color" : "violeta"
 						},
 						{
 							"title" : "Express.js",
-							"porcentage" : 45,
+							"porcentage" : 35,
 							"color" : "violeta"
 						}
 					]	
@@ -186,12 +186,12 @@
 					"content" : [
 						{
 							"title" : "Android",
-							"porcentage" : 35,
+							"porcentage" : 20,
 							"color" : "azul"
 						},
 						{
 							"title" : "iOS",
-							"porcentage" : 15,
+							"porcentage" : 30,
 							"color" : "azul"
 						},
 						{
@@ -277,7 +277,7 @@
 					},
 					{
 						"title" : "BackEnd",
-						"porcentage" : 50,
+						"porcentage" : 45,
 						"color" : "rojo"
 					},
 					{
@@ -292,7 +292,7 @@
 					},
 					{
 						"title" : "DataBases",
-						"porcentage" : 45,
+						"porcentage" : 38,
 						"color" : "amarillo"
 					}
 				]
