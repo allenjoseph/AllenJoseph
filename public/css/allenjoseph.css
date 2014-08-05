@@ -340,6 +340,7 @@ header .feeds li a{
 
 .feed-box {
 	position: relative;
+	margin: 5px;
 }
 
 .feed-box > img{

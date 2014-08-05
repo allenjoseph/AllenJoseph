@@ -33,6 +33,8 @@ $(document).ready(function(){
 	  ]
 	});
 
+	$('.feed-box a').attr('target', '_blank')
+
 	/*-----------------------------------------------------------------------------*/
 
 	var sections = new Array(20);
