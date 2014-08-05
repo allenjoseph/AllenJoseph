@@ -216,7 +216,7 @@ header .feeds li a{
 	border-bottom: 1px solid #ddd;
 	display: block;
 	min-height: 500px;
-	overflow: auto;
+	overflow: hidden;
 	padding: 20px;
 	position: relative;
 	width: 100%;
