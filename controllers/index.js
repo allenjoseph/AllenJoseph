@@ -32,12 +32,20 @@ var indexController = function(server, data){
 				}
 			})
 			.on('end', function() {
-				res.render('index', { app : data , feeds : JSON.parse(JSON.stringify(feeds))});		
+				res.render('index', { 
+					app : data , 
+					feeds : JSON.parse(JSON.stringify(feeds)),
+					env : server.get('env')
+				});		
 			});
 		});
 		
 		request.on('error', function(){
-			res.render('index', { app : data , feeds : ""});
+			res.render('index', { 
+				app : data , 
+				feeds : "",
+				env : server.get('env')
+			});
 		});		
 	});
 };

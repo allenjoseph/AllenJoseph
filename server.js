@@ -25,6 +25,14 @@ server.configure(function(){
     server.use( server.router );  
 });
 
+server.configure('development', function(){
+	server.set('env', 'development');
+});
+
+server.configure('production', function(){
+	server.set('env', 'production');
+});
+
 /* Controller INDEX ------------------------------------*/
 var indexController = require('./controllers/index');
 indexController(server, data);

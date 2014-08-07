@@ -1,13 +1,18 @@
 {
-  "name": "AllenJoseph",
-  "version": "0.0.1",
-  "description": "Profile Web Page",
-  "author": "Allen Joseph",
-  "dependencies": {
-    "express": "3.x",
-    "mongoose": "3.x",
-    "swig": "^1.3.2",
-    "underscore": "1.6.x",
-    "feedparser": "0.19.x"
-  }
+	"name": "AllenJoseph",
+	"version": "0.0.1",
+	"description": "Profile Web Page",
+	"author": "Allen Joseph",
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-cssmin": "~0.10.0",
+		"grunt-contrib-uglify": "~0.5.1"
+		},
+	"dependencies": {
+		"express": "3.x",
+		"mongoose": "3.x",
+		"swig": "^1.3.2",
+		"underscore": "1.6.x",
+		"feedparser": "0.19.x"
+	}
 }
