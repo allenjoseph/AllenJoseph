@@ -4,10 +4,9 @@ var http = require('http'),
 var indexController = function(server, data){
 
 	var feed_gizmodo = 'http://es.gizmodo.com/rss';
-	var feeds = [];
 
 	server.get('/', function(req, res){
-
+		var feeds = [];
 		var request = http.get(feed_gizmodo, function(response){
 			response.pipe(new feedParser())
 			.on('error', function (error) { console.error('FEED error : ',error); })
