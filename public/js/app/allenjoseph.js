@@ -1,5 +1,12 @@
-$(document).ready(function(){
+$(window).load(function(){
+	setTimeout(function(){
+		$('#loader-wrapper').fadeOut('slow', function(){
+			$('body').removeClass('inload');
+		});
+	},5000);
+});
 
+$(document).ready(function(){
 	$('.feed-slider').slick({
 	  dots: true,
 	  infinite: false,
