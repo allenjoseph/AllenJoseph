@@ -39,6 +39,11 @@
 
 	"menu" : [
 		{
+			"id" : "ocio",
+			"name" : "Ocio",
+			"icon" : "fa-bolt"
+		},
+		{
 			"id" : "skills",
 			"name" : "Skills",
 			"icon" : "fa-graduation-cap"
@@ -47,15 +52,54 @@
 			"id" : "social",
 			"name" : "Social",
 			"icon" : "fa-camera-retro"
-		},
-		{
-			"id" : "sports",
-			"name" : "Ocio",
-			"icon" : "fa-bolt"
 		}
 	],
 
 	"content" :[
+		{
+			"id" : "ocio",
+			"title" : "Ocio",
+			"description" : "",
+			"content" : [
+				{
+					"id" : "parkour",
+					"title" : "Parkour",
+					"url" : "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
+					"img" : "https://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
+				},
+				{
+					"id" : "tricks",
+					"title" : "Tricks",
+					"url" : "//www.youtube.com/embed/rZW2bT4Hp0U?rel=0",
+					"img" : "https://img.youtube.com/vi/rZW2bT4Hp0U/0.jpg"
+
+				},
+				{
+					"id" : "breakdance",
+					"title" : "BreakDance",
+					"url" : "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
+					"img" : "https://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
+				},
+				{
+					"id" : "skate",
+					"title" : "Skateboarding",
+					"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
+					"img" : "https://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
+				},
+				{
+					"id" : "powermoves",
+					"title" : "Powermoves",
+					"url" : "//www.youtube.com/embed/QtozCIPWqpc?rel=0",
+					"img" : "https://img.youtube.com/vi/QtozCIPWqpc/0.jpg"
+				},
+				{
+					"id" : "fun",
+					"title" : "Fun to imagine",
+					"url" : "//www.youtube.com/embed/T7rXTBrQsiY?rel=0",
+					"img" : "https://img.youtube.com/vi/T7rXTBrQsiY/0.jpg"
+				}
+			]
+		},
 		{
 			"id" : "skills",
 			"title" : "Skills",
@@ -221,38 +265,6 @@
 					"id" : "google"
 				}
 			]
-		},
-		{
-			"id" : "sports",
-			"title" : "Ocio",
-			"description" : "",
-			"content" : [
-				{
-					"id" : "parkour",
-					"title" : "Parkour",
-					"url" : "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
-					"img" : "https://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
-				},
-				{
-					"id" : "tricks",
-					"title" : "Tricks",
-					"url" : "//www.youtube.com/embed/rZW2bT4Hp0U?rel=0",
-					"img" : "https://img.youtube.com/vi/rZW2bT4Hp0U/0.jpg"
-
-				},
-				{
-					"id" : "breakdance",
-					"title" : "BreakDance",
-					"url" : "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
-					"img" : "https://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
-				},
-				{
-					"id" : "skate",
-					"title" : "Skateboarding",
-					"url" : "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
-					"img" : "https://img.youtube.com/vi/4ZWy5a646XM/0.jpg"
-				}
-			]
 		}
 	],
 
@@ -331,7 +343,7 @@
 				]
 			},
 			{
-				"id" : "footer-sports",
+				"id" : "footer-ocio",
 				"title" : "Ocio",
 				"icon" : "fa-bolt",
 				"description" : "",
