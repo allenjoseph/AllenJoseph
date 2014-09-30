@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>{{app.name}}</title>
+    <link rel="shortcut icon" href="css/img/favicon.png" type="image/png" />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' type='text/css' />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/allenjoseph.min.css"/>
+</head>
+<body>
+
+    <div class="navbar navbar-transparent navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="navbar-icon">
+                        <i class="fa fa-bars fa-fw"></i>
+                    </span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-star-half-o fa-fw"></i>
+                    &nbsp;Allen Joseph
+                </a>
+            </div>
+            <div class="navbar-collapse navbar-inverse-collapse collapse">
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav" id="content-menus"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row" id="content-header">
+            <div class="col-md-9">
+                <div id="content-info"></div>
+            </div>
+            <div class="col-md-3">
+                <ul class="feeds-titles-box" id="content-feeds-mini"></ul>
+            </div>
+             <div class="col-md-12">
+                social login
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content-feeds"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="template/javascript" id="tpl-nav">
+    <a href="#"><i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %></a>
+    </script>
+
+    <script type="template/javascript" id="tpl-info">
+    <div class="col-md-2">
+        <img src="<%= avatar %>" alt="<%= title %>" class="img-circle center-block img-responsive img-profile">
+    </div>
+    <div class="col-md-10">
+        <h4><%= slogan %></h4>
+        <p>
+            <%= description %><br/>
+            <i class="fa fa-map-marker"></i>&nbsp;<%= direction %>
+        </p>
+    </div>
+    </script>
+
+    <script type="template/javascript" id="tpl-feed-mini">
+    <a href="<%= link %>" target="_blank"><%= title %>&nbsp;<i class="fa fa-angle-double-right"></i></a>
+    </script>
+
+    <script type="template/javascript" id="tpl-feed">
+    <div class="col-md-12">
+        <h5 class="text-info"><%= title %></h5>
+    </div>
+    <div>
+    <% if(image) { %>
+        <div class="col-md-4">
+            <a href="<%= link %>" class="thumbnail" target="_blank">
+                <img src="<%= image %>">
+            </a>
+        </div>
+        <div class="col-md-8"><%= description %></div>
+    <% } else { %>
+        <div class="col-md-12"><%= description %></div>
+    <% } %>
+    </div>
+    </script>
+
+    {% if app.enviroment == 'development' %}
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/slick-carousel/slick.min.js"></script>
+    <script src="vendor/underscore/underscore.js"></script>
+    <script src="vendor/backbone/backbone.js"></script>
+
+    <script src="js/app/main.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/routers/routers.js"></script>
+    <script src="js/app/models/models.js"></script>
+    <script src="js/app/collections/collections.js"></script>
+    <script src="js/app/views/menu.js"></script>
+    <script src="js/app/views/menuList.js"></script>
+    <script src="js/app/views/feedMini.js"></script>
+    <script src="js/app/views/feed.js"></script>
+    <script src="js/app/views/feedList.js"></script>
+    <script src="js/app/views/info.js"></script>
+    {% elseif app.enviroment == 'production' %}
+    <script src="js/allenjoseph.min.js"></script>
+    {% endif %}
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52535807-1', 'auto');ga('require', 'displayfeatures');ga('send', 'pageview');
+    </script>
+</body>
+</html>

@@ -1,17 +1,15 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		
+
 		cssmin : {
 		    options : {
 		    	banner: '/* Minified on <%= grunt.template.date() %>*/\n'
 		    },
 		    app : {
 		    	files : {
-		    		'public/css/vendor.min.css' : [
-		    			'public/css/vendor/*.css'
-	    			],
-	    			'public/css/app.min.css' : [
-	    				'public/css/app/*.css'
+		    		'public/css/allenjoseph.min.css' : [
+                        'public/vendor/**/*.css',
+                        'public/css/app/*.css'
 	    			]
 		    	}
 		    }
@@ -24,22 +22,46 @@ module.exports = function(grunt) {
 			},
 			app : {
 				files : {
-					"public/js/vendor.min.js" : [
-					    'public/js/vendor/jquery.js',
-					    'public/js/vendor/modernizr.js',
-					    'public/js/vendor/foundation.min.js',
-					    'public/js/vendor/slick.min.js',
-					],
-					"public/js/app.min.js" : [
-						'public/js/app/allenjoseph.js'
+					"public/js/allenjoseph.min.js" : [
+					    'public/vendor/jquery/jquery.js',
+					    'public/vendor/slick-carousel/slick.min.js',
+                        'public/vendor/underscore/underscore.js',
+                        'public/vendor/backbone/backbone.js',
+
+                        'public/js/app/main.js',
+                        'public/js/app/app.js',
+                        'public/js/app/routers/routers.js',
+                        'public/js/app/models/models.js',
+                        'public/js/app/collections/collections.js',
+                        'public/js/app/views/menu.js',
+                        'public/js/app/views/menuList.js',
+                        'public/js/app/views/feedMini.js',
+                        'public/js/app/views/feed.js',
+                        'public/js/app/views/feedList.js',
+                        'public/js/app/views/info.js'
 					]
 				}
 			}
-		}
+		},
+
+        bower: {
+            install: {
+                options: {
+                    targetDir: './public/vendor',
+                    layout:'byType',
+                    install: true,
+                    verbose: false,
+                    cleanTargetDir: false,
+                    cleanBowerDir: false,
+                    bowerOptions: {}
+                }
+            }
+        }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-bower-task');
 
 	grunt.registerTask("default", ['cssmin','uglify']);
 };

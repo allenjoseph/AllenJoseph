@@ -1,0 +1,12 @@
+{
+  "name": "AllenJoseph.pe",
+  "version": "0.0.1",
+  "description": "AllenJoseph website",
+  "author": "Allen Joseph",
+  "dependencies": {
+    "jquery": null,
+    "slick-carousel": null,
+    "underscore":null,
+    "backbone":null
+  }
+}
