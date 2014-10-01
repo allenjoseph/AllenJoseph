@@ -89,6 +89,9 @@ body {
     font-size: 2em;
     color: rgba(255,255,255,0.8);
 }
+.navbar-nav > li > a:hover{
+    color: #666;
+}
 
 /*ANTIGUO*/
 /*

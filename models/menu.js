@@ -5,10 +5,10 @@ var menuSchema = new Schema({
     id : String,
     name : String,
     icon : String,
-    articles : [{
+    _section : {
         type: Schema.Types.ObjectId,
-        ref: 'article'
-    }]
+        ref: 'section'
+    }
 });
 
 var menu = db.model('menu', menuSchema);

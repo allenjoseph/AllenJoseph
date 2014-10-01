@@ -32,7 +32,6 @@
         </div>
     </div>
 
-
     <div class="container-fluid">
         <div class="row" id="content-header">
             <div class="col-md-9">
@@ -41,8 +40,10 @@
             <div class="col-md-3">
                 <ul class="feeds-titles-box" id="content-feeds-mini"></ul>
             </div>
-             <div class="col-md-12">
-                social login
+             <div class="col-md-12 center-block">
+                <div class="pull-right">
+                    <ul class="list-inline" id="content-social-links"></ul>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -51,6 +52,16 @@
             </div>
         </div>
     </div>
+
+    <script type="template/javascript" id="tpl-content">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><%= title %></h2>
+            <hr/>
+            <div id="<%= _id %>"></div>
+        </div>
+    </div>
+    </script>
 
     <script type="template/javascript" id="tpl-nav">
     <a href="#"><i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %></a>
@@ -84,11 +95,15 @@
                 <img src="<%= image %>">
             </a>
         </div>
-        <div class="col-md-8"><%= description %></div>
+        <div><%= description %></div>
     <% } else { %>
         <div class="col-md-12"><%= description %></div>
     <% } %>
     </div>
+    </script>
+
+    <script type="template/javascript" id="tpl-social-link">
+    <a href="<%= url %>" target="_blank"><img src="<%= icon %>"></a>
     </script>
 
     {% if app.enviroment == 'development' %}
@@ -108,6 +123,8 @@
     <script src="js/app/views/feed.js"></script>
     <script src="js/app/views/feedList.js"></script>
     <script src="js/app/views/info.js"></script>
+    <script src="js/app/views/socialLink.js"></script>
+    <script src="js/app/views/socialLinkList.js"></script>
     {% elseif app.enviroment == 'production' %}
     <script src="js/allenjoseph.min.js"></script>
     {% endif %}

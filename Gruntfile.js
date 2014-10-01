@@ -64,4 +64,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-bower-task');
 
 	grunt.registerTask("default", ['cssmin','uglify']);
+    grunt.registerTask("css", ['cssmin']);
 };

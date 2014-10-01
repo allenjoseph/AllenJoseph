@@ -10,6 +10,14 @@ var appSchema = new Schema({
     menus : [{
         type : Schema.Types.ObjectId,
         ref : "menu"
+    }],
+    socials : [{
+        type : Schema.Types.ObjectId,
+        ref : "social"
+    }],
+    sections : [{
+        type : Schema.Types.ObjectId,
+        ref : "section"
     }]
 });
 

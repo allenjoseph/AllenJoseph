@@ -1,5 +1,7 @@
 var http = require('http'),
 	feedParser = require('feedparser'),
+    Section = require('../models/section'),
+    SocialLink = require('../models/social'),
     Menu = require('../models/menu'),
     Article = require('../models/article'),
     App = require('../models/app');
@@ -9,11 +11,11 @@ var indexController = function(app){
     app.get('/data', function(req, res){
         App
         .findOne( { name : 'home' } )
-        .populate( 'menus' )
+        .populate( 'menus socials sections' )
         .exec(function( err, app ){
             if(!err){
                 Article
-                .populate( app, { path : 'menus.articles' }, function( err, data ){
+                .populate( app, { path : 'sections.articles' }, function( err, data ){
                     if(!err){
                         res.json(data);
                     }

@@ -6,9 +6,9 @@ var articleSchema = new Schema({
     title : String,
     url : String,
     img : String,
-    _menu : {
+    _section : {
         type: Schema.Types.ObjectId,
-        ref: 'menu'
+        ref: 'section'
     }
 });
 
