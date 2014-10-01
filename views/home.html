@@ -32,34 +32,50 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row" id="content-header">
+    <div id="content-header" class="container-fluid">
+        <div class="row">
             <div class="col-md-9">
                 <div id="content-info"></div>
             </div>
             <div class="col-md-3">
                 <ul class="feeds-titles-box" id="content-feeds-mini"></ul>
             </div>
-             <div class="col-md-12 center-block">
+        </div>
+        <div class="row">
+             <div class="col-md-12">
                 <div class="pull-right">
                     <ul class="list-inline" id="content-social-links"></ul>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="content-feeds"></div>
+    </div>
+
+    <div id="content-sections" class="container-fluid">
+    </div>
+
+    <div id="content-footer" class="container-fluid">
+        <div id="content-footer-items" class="row"></div>
+        <div>
+            <div class="footer-copyright">
+                <label>Allen Joseph - 2014</label>
             </div>
         </div>
     </div>
 
-    <script type="template/javascript" id="tpl-content">
-    <div class="row">
-        <div class="col-md-12">
-            <h2><%= title %></h2>
-            <hr/>
-            <div id="<%= _id %>"></div>
+    <script type="template/javascript" id="tpl-section">
+    <div class="col-md-12">
+        <h2><%= title %></h2>
+        <hr/>
+        <% if( id === 'ocio') { %>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="overflow-hidden">
+                    <div id="content-feeds"></div>
+                </div>
+            </div>
         </div>
+        <% } %>
+        <div class="row"></div>
     </div>
     </script>
 
@@ -88,7 +104,7 @@
     <div class="col-md-12">
         <h5 class="text-info"><%= title %></h5>
     </div>
-    <div>
+    <div class="feed-description">
     <% if(image) { %>
         <div class="col-md-4">
             <a href="<%= link %>" class="thumbnail" target="_blank">
@@ -104,6 +120,15 @@
 
     <script type="template/javascript" id="tpl-social-link">
     <a href="<%= url %>" target="_blank"><img src="<%= icon %>"></a>
+    </script>
+
+    <script type="template/javascript" id="tpl-footer">
+    <div class="col-md-4 footer-box">
+        <h3>
+            <i class="fa <%= icon %>"></i>
+            <%= name %>
+        </h3>
+    </div>
     </script>
 
     {% if app.enviroment == 'development' %}
@@ -125,6 +150,9 @@
     <script src="js/app/views/info.js"></script>
     <script src="js/app/views/socialLink.js"></script>
     <script src="js/app/views/socialLinkList.js"></script>
+    <script src="js/app/views/section.js"></script>
+    <script src="js/app/views/sectionList.js"></script>
+    <script src="js/app/views/footerItem.js"></script>
     {% elseif app.enviroment == 'production' %}
     <script src="js/allenjoseph.min.js"></script>
     {% endif %}

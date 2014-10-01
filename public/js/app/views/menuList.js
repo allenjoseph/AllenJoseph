@@ -11,6 +11,7 @@ var menuList = Backbone.View.extend({
         this.$el.empty();
         this.collection.each(function(menu){
             this.renderMenu(menu);
+            this.renderFooter(menu);
         }, this);
     },
 
@@ -18,6 +19,11 @@ var menuList = Backbone.View.extend({
         var view = new Views.Menu({ model : menu });
         this.$el.append(view.render().el);
     },
+
+    renderFooter : function( menu ){
+        var view = new Views.FooterItem({ model : menu });
+        $('#content-footer-items').append(view.render().el);
+    }
 
 });
 window.Views.MenuList = menuList;

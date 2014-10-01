@@ -13,3 +13,6 @@ window.Models.Info = info;
 
 var socialLink = Backbone.Model.extend({});
 window.Models.SocialLink = socialLink;
+
+var section = Backbone.Model.extend({});
+window.Models.Section = section;

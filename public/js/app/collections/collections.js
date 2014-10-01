@@ -12,3 +12,8 @@ var socialLinks = Backbone.Collection.extend({
     model : Models.SocialLink
 });
 window.Collections.SocialLinks = socialLinks;
+
+var sections = Backbone.Collection.extend({
+    model : Models.Section
+});
+window.Collections.Sections = sections;

@@ -92,7 +92,42 @@ body {
 .navbar-nav > li > a:hover{
     color: #666;
 }
+.overflow-hidden{
+    overflow: hidden!important;
+}
+.feed-description .thumbnail{
+    margin: 0!important;
+}
+.feed-description p{
+    margin: 0!important;
+}
 
+#content-footer{
+    background: #23132c;
+    margin-top: 20px;
+}
+#content-footer-items{
+    background: #391f47;
+}
+.footer-box{
+    border-right: 1px dashed #572D6E;
+}
+.footer-box:last-child{
+    border-right: none;
+}
+.footer-box h3{
+    text-align: center;
+    color: #bbb;
+}
+.footer-copyright{
+    height: 30px;
+    text-align: center;
+}
+.footer-copyright label{
+    color: #ccc;
+    font-size: 0.875em;
+    line-height: 30px;
+}
 /*ANTIGUO*/
 /*
 html {
