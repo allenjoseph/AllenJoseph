@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="navbar navbar-transparent navbar-fixed-top">
+    <div id="content-nav" class="navbar navbar-transparent navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -20,8 +20,7 @@
                     </span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <i class="fa fa-star-half-o fa-fw"></i>
-                    &nbsp;Allen Joseph
+                    <span id="section-title"><i class="fa fa-star-half-o fa-fw"></i>&nbsp;Allen Joseph</span>
                 </a>
             </div>
             <div class="navbar-collapse navbar-inverse-collapse collapse">
@@ -41,16 +40,16 @@
                 <ul class="feeds-titles-box" id="content-feeds-mini"></ul>
             </div>
         </div>
+    </div>
+
+    <div id="content-sections" class="container-fluid">
         <div class="row">
-             <div class="col-md-12">
-                <div class="pull-right">
+            <div class="col-md-12">
+                <div class="text-center">
                     <ul class="list-inline" id="content-social-links"></ul>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="content-sections" class="container-fluid">
     </div>
 
     <div id="content-footer" class="container-fluid">
@@ -64,9 +63,7 @@
 
     <script type="template/javascript" id="tpl-section">
     <div class="col-md-12">
-        <h2><%= title %></h2>
-        <hr/>
-        <% if( id === 'ocio') { %>
+        <% if( id === 'section-ocio') { %>
         <div class="row">
             <div class="col-md-12">
                 <div class="overflow-hidden">
@@ -80,14 +77,14 @@
     </script>
 
     <script type="template/javascript" id="tpl-nav">
-    <a href="#"><i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %></a>
+    <a href="#section-<%= id %>"><i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %></a>
     </script>
 
     <script type="template/javascript" id="tpl-info">
-    <div class="col-md-2">
+    <div class="col-md-3">
         <img src="<%= avatar %>" alt="<%= title %>" class="img-circle center-block img-responsive img-profile">
     </div>
-    <div class="col-md-10">
+    <div class="col-md-9">
         <h4><%= slogan %></h4>
         <p>
             <%= description %><br/>
