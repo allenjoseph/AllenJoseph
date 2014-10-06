@@ -28,17 +28,22 @@ module.exports = function(grunt) {
                         'public/vendor/underscore/underscore.js',
                         'public/vendor/backbone/backbone.js',
 
-                        'public/js/app/main.js',
-                        'public/js/app/app.js',
-                        'public/js/app/routers/routers.js',
-                        'public/js/app/models/models.js',
-                        'public/js/app/collections/collections.js',
-                        'public/js/app/views/menu.js',
-                        'public/js/app/views/menuList.js',
-                        'public/js/app/views/feedMini.js',
-                        'public/js/app/views/feed.js',
-                        'public/js/app/views/feedList.js',
-                        'public/js/app/views/info.js'
+                        'js/app/main.js',
+                        'js/app/models/models.js',
+                        'js/app/collections/collections.js',
+                        'js/app/views/menu.js',
+                        'js/app/views/menuList.js',
+                        'js/app/views/feedMini.js',
+                        'js/app/views/feed.js',
+                        'js/app/views/feedList.js',
+                        'js/app/views/info.js',
+                        'js/app/views/socialLink.js',
+                        'js/app/views/socialLinkList.js',
+                        'js/app/views/section.js',
+                        'js/app/views/sectionList.js',
+                        'js/app/views/footerItem.js',
+                        'js/app/routers/routers.js',
+                        'js/app/app.js'
 					]
 				}
 			}
