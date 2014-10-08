@@ -14,7 +14,7 @@
 
     /*=============================================================*/
 
-    new Routers.App();
-    Backbone.history.start({root: '/', silent: false});
+
+    app.routers.main = new Routers.App();
 
 })();

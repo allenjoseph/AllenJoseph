@@ -1,12 +1,29 @@
 var routers = Backbone.Router.extend({
 
     routes : {
-        '' : 'init',
-        'test' : 'test'
-
+        '' : 'index',
+        '*otherRoute' : 'default'
     },
 
-    init : function(){
+    initialize : function(){
+        app.routers.exceptions = [];
+        Backbone.history.start({root: '/'});
+    },
+
+    index : function(){
+        this.fetchData();
+    },
+
+    default : function(otherRoute){
+        if(!this.isRouteException(otherRoute)){
+            app.routers.main.navigate('');
+        }
+    },
+
+    fetchData : function(){
+
+        var self = this;
+
         $.get('data')
         .done(function(data){
 
@@ -25,23 +42,34 @@ var routers = Backbone.Router.extend({
             app.info = new Models.Info(data);
             app.views.info = new Views.Info({model : app.info});
 
-            $.get('/feeds')
-            .done(function(data){
-                app.collections.feeds = new Collections.Feeds(data);
-                app.views.feedList = new Views.FeedList({collection : app.collections.feeds});
-            })
-            .fail(function(err){
-                console.error(err);
-            });
-
+            self.addRoutesMenuExceptions();
+            self.fetchFeeds();
         })
         .fail(function(err){
             console.error(err);
         });
     },
-    test : function(){
-        console.log('load test');
+
+    fetchFeeds : function(){
+
+        $.get('/feeds')
+        .done(function(data){
+            app.collections.feeds = new Collections.Feeds(data);
+            app.views.feedList = new Views.FeedList({collection : app.collections.feeds});
+        })
+        .fail(function(err){
+            console.error(err);
+        });
+    },
+
+    addRoutesMenuExceptions : function(){
+        app.routers.exceptions = app.collections.menus.pluck('href');
+    },
+
+    isRouteException : function(route){
+        return _.contains(app.routers.exceptions, route);
     }
+
 
 });
 window.Routers.App = routers;
