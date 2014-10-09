@@ -16,3 +16,6 @@ window.Models.SocialLink = socialLink;
 
 var section = Backbone.Model.extend({});
 window.Models.Section = section;
+
+var skill = Backbone.Model.extend({});
+window.Models.Skill = skill

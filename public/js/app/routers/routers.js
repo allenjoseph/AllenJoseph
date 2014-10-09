@@ -6,6 +6,8 @@ var routers = Backbone.Router.extend({
     },
 
     initialize : function(){
+        app.views.layout = new Views.Layout();
+
         app.routers.exceptions = [];
         Backbone.history.start({root: '/'});
     },
@@ -26,7 +28,6 @@ var routers = Backbone.Router.extend({
 
         $.get('data')
         .done(function(data){
-
             app.collections.menus = new Collections.Menus(data.menus);
             app.views.menuList = new Views.MenuList({collection : app.collections.menus});
             delete data.menus;
@@ -51,7 +52,6 @@ var routers = Backbone.Router.extend({
     },
 
     fetchFeeds : function(){
-
         $.get('/feeds')
         .done(function(data){
             app.collections.feeds = new Collections.Feeds(data);
@@ -59,6 +59,16 @@ var routers = Backbone.Router.extend({
         })
         .fail(function(err){
             console.error(err);
+        });
+    },
+
+    skills : function(){
+        $.get('/skills')
+        .done(function(data){
+            app.collections.skills = new Collections.Skills()
+        })
+        .fail(function(err){
+            console.error(err)
         });
     },
 

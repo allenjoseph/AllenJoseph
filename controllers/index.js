@@ -4,7 +4,8 @@ var http = require('http'),
     SocialLink = require('../models/social'),
     Menu = require('../models/menu'),
     Article = require('../models/article'),
-    App = require('../models/app');
+    App = require('../models/app'),
+    Skill = require('../models/skill');
 
 var indexController = function(app){
 
@@ -67,6 +68,14 @@ var indexController = function(app){
         };
 		res.render('home',params);
 	});
+
+    app.get('/skills', function(req, res){
+        Skill.find({}).exec(function(err, data){
+            if(!err){
+                res.json(data);
+            }
+        });
+    });
 };
 
 module.exports = indexController;
