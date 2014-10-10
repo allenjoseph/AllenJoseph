@@ -21,4 +21,4 @@ window.Collections.Sections = sections;
 var skills = Backbone.Collection.extend({
     model : Models.Skill
 });
-window.Collections.Skill = skills;
+window.Collections.Skills = skills;

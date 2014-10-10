@@ -1,3 +1,8 @@
+*{
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
 html {
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
@@ -15,6 +20,9 @@ body {
     background: #F4F4F4;
     font-size: 16px;
     background-image: url('img/whitediamond.png');
+}
+a{
+    cursor: pointer;
 }
 .feeds-titles-box{
     height: 250px;

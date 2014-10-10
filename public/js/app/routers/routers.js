@@ -45,6 +45,7 @@ var routers = Backbone.Router.extend({
 
             self.addRoutesMenuExceptions();
             self.fetchFeeds();
+            self.fetchSkills();
         })
         .fail(function(err){
             console.error(err);
@@ -62,10 +63,11 @@ var routers = Backbone.Router.extend({
         });
     },
 
-    skills : function(){
+    fetchSkills : function(){
         $.get('/skills')
         .done(function(data){
-            app.collections.skills = new Collections.Skills()
+            app.collections.skills = new Collections.Skills(data);
+            app.views.skillList = new Views.SkillList({collection : app.collections.skills});
         })
         .fail(function(err){
             console.error(err)
@@ -74,6 +76,7 @@ var routers = Backbone.Router.extend({
 
     addRoutesMenuExceptions : function(){
         app.routers.exceptions = app.collections.menus.pluck('href');
+        app.routers.exceptions.push('content-header');
     },
 
     isRouteException : function(route){

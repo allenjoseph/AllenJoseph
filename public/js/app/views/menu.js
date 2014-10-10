@@ -22,7 +22,7 @@ var menu = Backbone.View.extend({
         $('#section-title').html(title);
 
         $('.section-box').css('padding-top','10px');
-        $('#'+this.model.attributes.href).css('padding-top','80px');
+        $('#'+this.model.attributes.href).css('padding-top','100px');
     }
 
 });

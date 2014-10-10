@@ -19,7 +19,7 @@
                         <i class="fa fa-bars fa-fw"></i>
                     </span>
                 </button>
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="#content-header">
                     <span id="section-title"><i class="fa fa-star-half-o fa-fw"></i>&nbsp;Allen Joseph</span>
                 </a>
             </div>
@@ -64,15 +64,12 @@
     <script type="template/javascript" id="tpl-section">
     <div class="col-md-12">
         <% if( id === 'section-ocio') { %>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="overflow-hidden">
-                    <div id="content-feeds"></div>
-                </div>
-            </div>
+        <div class="overflow-hidden">
+            <div id="content-feeds"></div>
         </div>
+        <% } else if( id === 'section-skills') { %>
+            <div id="content-skills"></div>
         <% } %>
-        <div class="row"></div>
     </div>
     </script>
 
@@ -120,11 +117,15 @@
     </script>
 
     <script type="template/javascript" id="tpl-footer">
-    <div class="col-md-4 footer-box">
-        <h3>
-            <i class="fa <%= icon %>"></i>
-            <%= name %>
-        </h3>
+    <h3>
+        <i class="fa <%= icon %>"></i>
+        <%= name %>
+    </h3>
+    </script>
+    <script type="template/javascript" id="tpl-skill">
+    <div class="alert alert-dismissable" style="background: <%= background %>; color : <%= textColor %>;">
+        <h4><%= name %></h4>
+        <p><%= description %></p>
     </div>
     </script>
 
@@ -148,6 +149,8 @@
     <script src="js/app/views/section.js"></script>
     <script src="js/app/views/sectionList.js"></script>
     <script src="js/app/views/footerItem.js"></script>
+    <script src="js/app/views/skill.js"></script>
+    <script src="js/app/views/skillList.js"></script>
     <script src="js/app/views/layout.js"></script>
     <script src="js/app/routers/routers.js"></script>
     <script src="js/app/app.js"></script>

@@ -1,5 +1,9 @@
 var footerItem =  Backbone.View.extend({
 
+    tagName : 'div',
+
+    className : 'col-md-4 footer-box',
+
     template : _.template(this.$('#tpl-footer').html()),
 
     render : function(){
