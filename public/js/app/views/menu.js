@@ -3,7 +3,7 @@ var menu = Backbone.View.extend({
     tagName : 'li',
 
     events : {
-        'click' : 'addClass'
+        'click' : 'clickMenu'
     },
 
     template : _.template(this.$('#tpl-nav').html()),
@@ -13,7 +13,7 @@ var menu = Backbone.View.extend({
         return this;
     },
 
-    addClass : function(){
+    clickMenu : function(){
 
         $('.navbar-nav > li').removeClass('selected');
         this.$el.addClass( 'selected' );

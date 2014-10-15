@@ -42,6 +42,7 @@ var routers = Backbone.Router.extend({
 
             app.info = new Models.Info(data);
             app.views.info = new Views.Info({model : app.info});
+            app.views.footer = new Views.Footer();
 
             self.addRoutesMenuExceptions();
             self.fetchFeeds();

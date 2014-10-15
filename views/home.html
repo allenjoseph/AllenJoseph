@@ -53,8 +53,12 @@
     </div>
 
     <div id="content-footer" class="container-fluid">
-        <div id="content-footer-items" class="row"></div>
-        <div>
+        <div class="row" id="content-footer-top">
+            <div class="col-md-6">
+                <div id="content-footer-form"></div>
+            </div>
+        </div>
+        <div class="row">
             <div class="footer-copyright">
                 <label>Allen Joseph - 2014</label>
             </div>
@@ -117,10 +121,26 @@
     </script>
 
     <script type="template/javascript" id="tpl-footer">
-    <h3>
-        <i class="fa <%= icon %>"></i>
-        <%= name %>
-    </h3>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Message</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-info">Say Hello!</button>
+            </div>
+        </div>
+    </div>
     </script>
     <script type="template/javascript" id="tpl-skill">
     <div class="alert alert-dismissable" style="background: <%= background %>; color : <%= textColor %>;">
@@ -148,7 +168,7 @@
     <script src="js/app/views/socialLinkList.js"></script>
     <script src="js/app/views/section.js"></script>
     <script src="js/app/views/sectionList.js"></script>
-    <script src="js/app/views/footerItem.js"></script>
+    <script src="js/app/views/footer.js"></script>
     <script src="js/app/views/skill.js"></script>
     <script src="js/app/views/skillList.js"></script>
     <script src="js/app/views/layout.js"></script>
