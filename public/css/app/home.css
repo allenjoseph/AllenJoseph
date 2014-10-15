@@ -79,6 +79,12 @@ a{
 }
 #content-footer-top{
     background: #391f47;
+    padding: 20px;
+    color: #ddd;
+}
+#content-footer-top input,
+#content-footer-top textarea{
+    color : #fff;
 }
 .footer-box{
     border-right: 1px dashed #572D6E;
