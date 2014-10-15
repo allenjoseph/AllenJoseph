@@ -64,7 +64,9 @@ a{
     margin: 0.1em 0 0.5em;
     color:rgb(221, 221, 221);
 }
-
+#content-info .img-circle{
+    border : 2px solid rgba(255,255,255,.8);
+}
 #content-feeds p{
     text-align: justify;
 }
@@ -152,6 +154,9 @@ a{
     margin-top: 0px;
 }
 /*Section --------------------------------------------------*/
+#content-sections{
+    min-height: 500px;
+}
 .section-box{
     min-height: 600px;
     padding-top: 10px;

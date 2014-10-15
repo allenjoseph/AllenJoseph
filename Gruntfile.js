@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                         'public/vendor/underscore/underscore.js',
                         'public/vendor/backbone/backbone.js',
 
-                        'js/app/main.js',
+                        'js/app/init.js',
                         'js/app/models/models.js',
                         'js/app/collections/collections.js',
                         'js/app/views/menu.js',
