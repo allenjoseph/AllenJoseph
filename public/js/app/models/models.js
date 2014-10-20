@@ -19,3 +19,6 @@ window.Models.Section = section;
 
 var skill = Backbone.Model.extend({});
 window.Models.Skill = skill
+
+var message = Backbone.Model.extend({});
+window.Models.Message = message;

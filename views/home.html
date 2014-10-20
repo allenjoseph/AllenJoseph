@@ -121,26 +121,26 @@
     </script>
 
     <script type="template/javascript" id="tpl-footer">
-    <div class="form-horizontal">
+    <form class="form-horizontal">
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Email</label>
             <div class="col-lg-10">
-                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
             </div>
         </div>
         <div class="form-group">
             <label for="textArea" class="col-lg-2 control-label">Message</label>
             <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="textArea"></textarea>
-                <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <textarea class="form-control" rows="3" id="textArea" name="message" required></textarea>
+                <span class="help-block">Hi, how r u ?.</span>
             </div>
         </div>
         <div class="form-group">
             <div class="col-lg-10 col-lg-offset-2">
-                <button type="submit" class="btn btn-info">Say Hello!</button>
+                <button type="submit" class="btn btn-info" >Say Hello!</button>
             </div>
         </div>
-    </div>
+    </form>
     </script>
     <script type="template/javascript" id="tpl-skill">
     <div class="alert alert-dismissable" style="background: <%= background %>; color : <%= textColor %>;">
