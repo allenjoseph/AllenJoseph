@@ -19,10 +19,15 @@ var footer =  Backbone.View.extend({
 
     sendMessage : function(e){
         e.preventDefault();
-        var email = $.trim(this.$el.find('form input[name="email"]').val());
-        var message = $.trim(this.$el.find('form textarea[name="message"]').val());
-        var msg = { email : email, message : message};
-        var message =  new Models.Message(msg);
+        var emailValue = $.trim(this.$el.find('form input[name="email"]').val());
+        var messageValue = $.trim(this.$el.find('form textarea[name="message"]').val());
+        if(emailValue && messageValue){
+            var message =  new Models.Message({ email : emailValue, message : messageValue});
+            message.save();
+        }else{
+            this.$el.find('form input[name="email"]').val(email);
+            this.$el.find('form textarea[name="message"]').val(message);
+        }
     }
 });
 window.Views.Footer = footer;

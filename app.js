@@ -13,6 +13,7 @@ app.use( express.static(__dirname + '/public') );
 var enviroment = process.env.NODE_ENV || 'development';
 app.set('enviroment', enviroment);
 
+
 /* Controller INDEX ------------------------------------*/
 var indexController = require('./controllers/index');
 indexController(app);
