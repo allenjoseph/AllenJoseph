@@ -76,10 +76,6 @@ var indexController = function(app){
             }
         });
     });
-
-    app.post('/messages',function(req, res){
-        debugger;
-    });
 };
 
 module.exports = indexController;

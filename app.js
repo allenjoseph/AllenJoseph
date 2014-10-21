@@ -1,5 +1,6 @@
 var express = require('express'),
     swig = require('swig'),
+    bodyParser = require('body-parser'),
     app = express();
 
 /* CONFIGURACION DE LAS VISTAS */
@@ -9,14 +10,18 @@ app.set( 'views', __dirname + '/views' );
 
 /* CONFIGURACION DEL app */
 app.use( express.static(__dirname + '/public') );
+//app.use( bodyParser.urlencoded({ extended: false }));
+//app.use( bodyParser.json() );
 
 var enviroment = process.env.NODE_ENV || 'development';
 app.set('enviroment', enviroment);
 
 
-/* Controller INDEX ------------------------------------*/
+/* Controllers ------------------------------------*/
 var indexController = require('./controllers/index');
+var messageController = require('./controllers/message');
 indexController(app);
+messageController(app);
 
 /*-------------------------------------------------*/
 app.listen(3030,function(){
