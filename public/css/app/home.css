@@ -167,3 +167,9 @@ a{
     min-height: 600px;
     padding-top: 10px;
 }
+/*Alerts --------------------------------------------------*/
+#alert-box{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

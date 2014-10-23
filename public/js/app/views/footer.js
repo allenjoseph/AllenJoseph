@@ -6,7 +6,7 @@ var footer =  Backbone.View.extend({
         'submit form' : 'sendMessage'
     },
 
-    template : _.template(this.$('#tpl-footer').html()),
+    template : _.template($('#tpl-footer').html()),
 
     initialize : function(){
         this.render();
@@ -19,15 +19,23 @@ var footer =  Backbone.View.extend({
 
     sendMessage : function(e){
         e.preventDefault();
-        var emailValue = $.trim(this.$el.find('form input[name="email"]').val());
-        var messageValue = $.trim(this.$el.find('form textarea[name="message"]').val());
+        var emailValue = $.trim(this.$el.find('#inputEmail').val());
+        var messageValue = $.trim(this.$el.find('#textAreaMessage').val());
         if(emailValue && messageValue){
             var message =  new Models.Message({ email : emailValue, message : messageValue});
             message.save();
+            this.$el.find('#inputEmail').val("");
+            this.$el.find('#textAreaMessage').val("");
+            this.renderSuccessAlert("Gracias por dejar su saludo! :)");
         }else{
-            this.$el.find('form input[name="email"]').val(email);
-            this.$el.find('form textarea[name="message"]').val(message);
+            this.$el.find('#inputEmail').val(emailValue);
+            this.$el.find('#textAreaMessage').val(messageValue);
         }
+    },
+
+    renderSuccessAlert : function(message){
+        var alertTemplate = _.template($('#tpl-success-alert').html());
+        $('#alert-box').html(alertTemplate({ message : message}));
     }
 });
 window.Views.Footer = footer;

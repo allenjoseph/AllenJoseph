@@ -65,6 +65,15 @@
         </div>
     </div>
 
+    <div id="alert-box"></div>
+
+    <script type="template/javascript" id="tpl-success-alert">
+    <div class="alert alert-dismissable alert-success">
+        <button type="button" class="close" onclick="$(this).next().html('').parent().hide()">×</button>
+        <span><%= message %></span>
+    </div>
+    </script>
+
     <script type="template/javascript" id="tpl-section">
     <div class="col-md-12">
         <% if( id === 'section-ocio') { %>
@@ -125,13 +134,13 @@
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Email</label>
             <div class="col-lg-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" autocomplete="off" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Message</label>
+            <label for="textAreaMessage" class="col-lg-2 control-label">Message</label>
             <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="textArea" name="message" required></textarea>
+                <textarea class="form-control" rows="3" id="textAreaMessage" name="message" autocomplete="off" required></textarea>
                 <span class="help-block">Hi, how r u ?.</span>
             </div>
         </div>
