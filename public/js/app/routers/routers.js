@@ -7,8 +7,6 @@ var routers = Backbone.Router.extend({
 
     initialize : function(){
         app.views.layout = new Views.Layout();
-
-        app.routers.exceptions = [];
         Backbone.history.start({root: '/'});
     },
 
@@ -17,9 +15,10 @@ var routers = Backbone.Router.extend({
     },
 
     default : function(otherRoute){
-        if(!this.isRouteException(otherRoute)){
-            app.routers.main.navigate('');
+        if(!app.collections.menus){
+            this.fetchData();
         }
+        this.navigate('');
     },
 
     fetchData : function(){
@@ -44,7 +43,6 @@ var routers = Backbone.Router.extend({
             app.views.info = new Views.Info({model : app.info});
             app.views.footer = new Views.Footer();
 
-            self.addRoutesMenuExceptions();
             self.fetchFeeds();
             self.fetchSkills();
         })
@@ -73,17 +71,7 @@ var routers = Backbone.Router.extend({
         .fail(function(err){
             console.error(err)
         });
-    },
-
-    addRoutesMenuExceptions : function(){
-        app.routers.exceptions = app.collections.menus.pluck('href');
-        app.routers.exceptions.push('content-header');
-    },
-
-    isRouteException : function(route){
-        return _.contains(app.routers.exceptions, route);
     }
-
 
 });
 window.Routers.App = routers;

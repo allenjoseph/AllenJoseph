@@ -10,6 +10,12 @@ var sectionList = Backbone.View.extend({
     renderSection : function(section){
         var view = new Views.Section({ model : section });
         this.$el.append(view.render().el);
+
+        if( section.attributes.articles &&
+            section.attributes.articles.length > 0){
+            app.collections.videos = new Collections.Videos(section.attributes.articles);
+            app.views.VideoList = new Views.VideoList({collection : app.collections.videos});
+        }
     },
 
     render : function(){

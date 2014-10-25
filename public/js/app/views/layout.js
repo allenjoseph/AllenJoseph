@@ -11,7 +11,6 @@ var layout = Backbone.View.extend({
             }else{
                 $('#content-nav').addClass('navbar-transparent');
                 $('.navbar-nav > li').removeClass('selected');
-                $('.section-box').css('padding-top','10px');
             }
         });
     }

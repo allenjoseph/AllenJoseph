@@ -20,6 +20,9 @@ window.Models.Section = section;
 var skill = Backbone.Model.extend({});
 window.Models.Skill = skill
 
+var video = Backbone.Model.extend({});
+window.Models.Video = video
+
 var message = Backbone.Model.extend({
     urlRoot : '/messages'
 });

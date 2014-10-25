@@ -17,9 +17,8 @@ var menu = Backbone.View.extend({
 
         $('.navbar-nav > li').removeClass('selected');
         this.$el.addClass( 'selected' );
-
-        $('.section-box').css('padding-top','10px');
-        $('#'+this.model.attributes.href).css('padding-top','100px');
+        var top = $('#'+this.model.attributes.href).offset().top;
+        $('body').stop().animate({'scrollTop':top},300);
     }
 
 });

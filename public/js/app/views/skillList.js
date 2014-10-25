@@ -5,17 +5,11 @@ var skillList = Backbone.View.extend({
     initialize : function(){
         this.render();
         this.listenTo( this.collection, 'add', this.renderSkill );
-        // this.maxColums = 4;
     },
 
     render : function(){
         this.$el.empty();
         this.collection.each(function(skill){
-            // if(index%this.maxColums === 0){
-
-            // }else if (index%this.maxColums === this.maxColums-1){
-
-            // }else if ()
             this.renderSkill(skill);
         }, this);
     },

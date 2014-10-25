@@ -14,13 +14,10 @@
     <div id="content-nav" class="navbar navbar-transparent navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                    <span class="navbar-icon">
-                        <i class="fa fa-bars fa-fw"></i>
+                <a class="navbar-brand" onclick="$('body').stop().animate({'scrollTop':0},300)">
+                    <span id="section-title">
+                        <i class="fa fa-star-half-o fa-fw"></i>&nbsp;Allen Joseph
                     </span>
-                </button>
-                <a class="navbar-brand" href="#content-header">
-                    <span id="section-title"><i class="fa fa-star-half-o fa-fw"></i>&nbsp;Allen Joseph</span>
                 </a>
             </div>
             <div class="navbar-collapse navbar-inverse-collapse collapse">
@@ -32,6 +29,7 @@
     </div>
 
     <div id="content-header" class="container-fluid">
+        <div class="background-wrapper"></div>
         <div class="row">
             <div class="col-md-9">
                 <div id="content-info"></div>
@@ -67,6 +65,23 @@
 
     <div id="alert-box"></div>
 
+    <div id="modal-video" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                    onclick="$('#modal-video .modal-title').html('');
+                             $('#modal-video .modal-body .embed-responsive').html('');
+                             $('#modal-video').hide()" >×</button>
+                    <h4 class="modal-title text-info"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-4by3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="template/javascript" id="tpl-success-alert">
     <div class="alert alert-dismissable alert-success">
         <button type="button" class="close" onclick="$(this).next().html('').parent().hide()">×</button>
@@ -75,11 +90,13 @@
     </script>
 
     <script type="template/javascript" id="tpl-section">
+    <hr class="line-decorative"/>
     <div class="col-md-12">
         <% if( id === 'section-ocio') { %>
         <div class="overflow-hidden">
             <div id="content-feeds"></div>
         </div>
+        <div id="content-videos"></div>
         <% } else if( id === 'section-skills') { %>
             <div id="content-skills"></div>
         <% } %>
@@ -87,7 +104,9 @@
     </script>
 
     <script type="template/javascript" id="tpl-nav">
-    <a href="#<%= href %>"><i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %></a>
+    <a>
+        <i class="fa <%= icon %> fa-fw"></i>&nbsp;&nbsp;<%= name %>
+    </a>
     </script>
 
     <script type="template/javascript" id="tpl-info">
@@ -157,6 +176,14 @@
         <p><%= description %></p>
     </div>
     </script>
+    <script type="template/javascript" id="tpl-video">
+    <div data-video="<%= url %>">
+        <h5 class="text-info"><%= title %></h5>
+        <a class="thumbnail">
+            <img src="<%= img %>" alt="...">
+        </a>
+    </div>
+    </script>
 
     {% if app.enviroment == 'development' %}
     <script src="vendor/jquery/jquery.js"></script>
@@ -180,6 +207,8 @@
     <script src="js/app/views/footer.js"></script>
     <script src="js/app/views/skill.js"></script>
     <script src="js/app/views/skillList.js"></script>
+    <script src="js/app/views/video.js"></script>
+    <script src="js/app/views/videoList.js"></script>
     <script src="js/app/views/layout.js"></script>
     <script src="js/app/routers/routers.js"></script>
     <script src="js/app/app.js"></script>

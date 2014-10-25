@@ -53,6 +53,9 @@ a{
     text-decoration: none;
     display: block;
 }
+.feed-description {
+    padding: 20px;
+}
 .feed-description .thumbnail{
     margin: 0!important;
 }
@@ -106,7 +109,8 @@ a{
     line-height: 30px;
 }
 #content-social-links{
-    padding-top: 30px;
+    padding-top: 40px;
+    margin-bottom: 0;
 }
 /*Nav ----------------------------------------------------*/
 .navbar{
@@ -150,26 +154,45 @@ a{
 }
 /*Head -----------------------------------------------------*/
 #content-header{
-    background-image: url('img/pattern2.png');
     padding-top: 90px;
     padding-bottom: 20px;
     color : #ddd;
+    position: relative;
 }
 #content-header h1{
     color : #ddd;
     margin-top: 0px;
 }
-/*Section --------------------------------------------------*/
-#content-sections{
-    min-height: 500px;
+.background-wrapper{
+    background-image: url('img/pattern2.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
 }
-.section-box{
-    min-height: 600px;
-    padding-top: 10px;
+/*Sections --------------------------------------------------*/
+#content-videos{
+    margin-top: 20px;
+    text-align: center;
+}
+.line-decorative{
+    border: 0 none;
+    border-top : double #ddd;
+    text-align: center;
+    margin: 40px 20px 50px 20px;
 }
 /*Alerts --------------------------------------------------*/
 #alert-box{
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+#modal-video{
+    background: rgba(255,255,255,.6);
 }

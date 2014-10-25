@@ -18,6 +18,11 @@ var sections = Backbone.Collection.extend({
 });
 window.Collections.Sections = sections;
 
+var videos = Backbone.Collection.extend({
+    model : Models.Video
+});
+window.Collections.Videos = videos;
+
 var skills = Backbone.Collection.extend({
     model : Models.Skill
 });

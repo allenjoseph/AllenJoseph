@@ -41,6 +41,8 @@ module.exports = function(grunt) {
                         'js/app/views/socialLinkList.js',
                         'js/app/views/section.js',
                         'js/app/views/sectionList.js',
+                        'js/app/views/video.js',
+                        'js/app/views/videoList.js',
                         'js/app/views/footer.js',
                         'js/app/routers/routers.js',
                         'js/app/app.js'
