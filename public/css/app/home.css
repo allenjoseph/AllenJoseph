@@ -99,11 +99,11 @@ a{
     text-align: center;
     color: #bbb;
 }
-.footer-copyright{
+#footer-copyright{
     height: 30px;
     text-align: center;
 }
-.footer-copyright label{
+#footer-copyright label{
     color: #ccc;
     font-size: 0.875em;
     line-height: 30px;

@@ -16,6 +16,11 @@ var sectionList = Backbone.View.extend({
             app.collections.videos = new Collections.Videos(section.attributes.articles);
             app.views.VideoList = new Views.VideoList({collection : app.collections.videos});
         }
+        if( section.attributes.skills &&
+            section.attributes.skills.length > 0){
+            app.collections.skills = new Collections.Skills(section.attributes.skills);
+            app.views.skillList = new Views.SkillList({collection : app.collections.skills});
+        }
     },
 
     render : function(){

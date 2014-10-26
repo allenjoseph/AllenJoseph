@@ -5,6 +5,8 @@ var info = Backbone.View.extend({
     template : _.template(this.$('#tpl-info').html()),
 
     initialize : function(){
+        $('#section-title label').html(this.model.attributes.title);
+        $('#footer-copyright label').html(this.model.attributes.copyright);
         this.render();
     },
 

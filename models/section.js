@@ -8,6 +8,10 @@ var sectionSchema = new Schema({
     articles : [{
         type: Schema.Types.ObjectId,
         ref: 'article'
+    }],
+    skills : [{
+        type: Schema.Types.ObjectId,
+        ref: 'skill'
     }]
 });
 

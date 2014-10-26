@@ -3,7 +3,7 @@ var layout = Backbone.View.extend({
     el : 'body',
 
     initialize : function(){
-
+        //ADD SCROLL ANIMATION
         $(window).on('scroll', function(){
             var window_top = $(window).scrollTop();
             if(window_top > 290){
