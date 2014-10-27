@@ -10,8 +10,8 @@ app.set( 'views', __dirname + '/views' );
 
 /* CONFIGURACION DEL app */
 app.use( express.static(__dirname + '/public') );
-//app.use( bodyParser.urlencoded({ extended: false }));
-//app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({ extended: false }));
+app.use( bodyParser.json() );
 
 var enviroment = process.env.NODE_ENV || 'development';
 app.set('enviroment', enviroment);

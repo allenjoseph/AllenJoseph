@@ -9,7 +9,15 @@ var http = require('http'),
 
 var indexController = function(app){
 
-	app.get('/home', function(req, res){
+    app.get('/', function(req, res){
+        res.redirect('/home');
+    });
+
+    app.all('/home/*', function(req, res){
+        res.redirect('/home');
+    })
+
+    app.get('/home', function(req, res){
         var params = {
             'app' : {
                 'name' : 'Allen Joseph',

@@ -22,30 +22,32 @@ module.exports = function(grunt) {
 			},
 			app : {
 				files : {
-					"public/js/allenjoseph.min.js" : [
-					    'public/vendor/jquery/jquery.js',
-					    'public/vendor/slick-carousel/slick.min.js',
+					'public/js/allenjoseph.min.js' : [
+                        'public/vendor/jquery/jquery.js',
+                        'public/vendor/slick-carousel/slick.min.js',
                         'public/vendor/underscore/underscore.js',
                         'public/vendor/backbone/backbone.js',
-
-                        'js/app/init.js',
-                        'js/app/models/models.js',
-                        'js/app/collections/collections.js',
-                        'js/app/views/menu.js',
-                        'js/app/views/menuList.js',
-                        'js/app/views/feedMini.js',
-                        'js/app/views/feed.js',
-                        'js/app/views/feedList.js',
-                        'js/app/views/info.js',
-                        'js/app/views/socialLink.js',
-                        'js/app/views/socialLinkList.js',
-                        'js/app/views/section.js',
-                        'js/app/views/sectionList.js',
-                        'js/app/views/video.js',
-                        'js/app/views/videoList.js',
-                        'js/app/views/footer.js',
-                        'js/app/routers/routers.js',
-                        'js/app/app.js'
+                        'public/js/app/init.js',
+                        'public/js/app/models/models.js',
+                        'public/js/app/collections/collections.js',
+                        'public/js/app/views/menu.js',
+                        'public/js/app/views/menuList.js',
+                        'public/js/app/views/feedMini.js',
+                        'public/js/app/views/feed.js',
+                        'public/js/app/views/feedList.js',
+                        'public/js/app/views/info.js',
+                        'public/js/app/views/socialLink.js',
+                        'public/js/app/views/socialLinkList.js',
+                        'public/js/app/views/section.js',
+                        'public/js/app/views/sectionList.js',
+                        'public/js/app/views/footer.js',
+                        'public/js/app/views/skill.js',
+                        'public/js/app/views/skillList.js',
+                        'public/js/app/views/video.js',
+                        'public/js/app/views/videoList.js',
+                        'public/js/app/views/layout.js',
+                        'public/js/app/routers/routers.js',
+                        'public/js/app/app.js'
 					]
 				}
 			}
@@ -70,6 +72,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-bower-task');
 
-	grunt.registerTask("default", ['cssmin','uglify']);
-    grunt.registerTask("css", ['cssmin']);
+	grunt.registerTask('default', ['cssmin','uglify']);
+    grunt.registerTask('css', ['cssmin']);
 };

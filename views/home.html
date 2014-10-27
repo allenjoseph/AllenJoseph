@@ -83,8 +83,8 @@
         </div>
     </div>
 
-    <script type="template/javascript" id="tpl-success-alert">
-    <div class="alert alert-dismissable alert-success">
+    <script type="template/javascript" id="tpl-alert">
+    <div class="alert alert-dismissable alert-<%= type %>">
         <button type="button" class="close" onclick="$(this).next().html('').parent().hide()">×</button>
         <span><%= message %></span>
     </div>
@@ -191,7 +191,6 @@
     <script src="vendor/slick-carousel/slick.min.js"></script>
     <script src="vendor/underscore/underscore.js"></script>
     <script src="vendor/backbone/backbone.js"></script>
-
     <script src="js/app/init.js"></script>
     <script src="js/app/models/models.js"></script>
     <script src="js/app/collections/collections.js"></script>

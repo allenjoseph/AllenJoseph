@@ -1,3 +1,3 @@
 (function(){
-    app.routers.main = new Routers.App();
+    app.routers.main = new window.Routers.App();
 })();
