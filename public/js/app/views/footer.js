@@ -22,45 +22,37 @@
             e.preventDefault();
 
             var self = this;
+            this.$el.find('button.btn-submit').prop('disabled', true);
             var emailValue = $.trim(this.$el.find('#inputEmail').val());
             var messageValue = $.trim(this.$el.find('#textAreaMessage').val());
 
             if(emailValue && messageValue){
 
-                this.renderWarningAlert('Enviando tu saludo...');
-
                 var message =  new window.Models.Message({ email : emailValue, message : messageValue});
+                var alert = new window.Models.Alert({ type : 'warning',message : 'Enviando tu saludo...'});
+                var alertView = new window.Views.Alert({ model : alert });
+
                 var xhr = message.save();
                 xhr.then(function(success){
                     if(success && success.thanks){
-                        self.renderSuccessAlert(success.thanks);
+                        alert.set('message',success.thanks);
+                        alert.set('type','success');
                     }
                     self.$el.find('#inputEmail').val("");
                     self.$el.find('#textAreaMessage').val("");
+                    self.$el.find('button.btn-submit').prop('disabled', false);
                 },function(fail){
                     if(fail && fail.error){
-                        self.renderErrorAlert(fail.error);
+                        alert.set('message',fail.error);
+                        alert.set('type','error');
                     }
+                    self.$el.find('button.btn-submit').prop('disabled', false);
                 });
             }else{
                 this.$el.find('#inputEmail').val(emailValue);
                 this.$el.find('#textAreaMessage').val(messageValue);
+                this.$el.find('button.btn-submit').prop('disabled', false);
             }
-        },
-
-        renderWarningAlert : function(message){
-            var alertTemplate = _.template($('#tpl-alert').html());
-            $('#alert-box').html(alertTemplate({ type : 'warning', message : message}));
-        },
-
-        renderSuccessAlert : function(message){
-            var alertTemplate = _.template($('#tpl-alert').html());
-            $('#alert-box').html(alertTemplate({ type : 'success', message : message}));
-        },
-
-        renderErrorAlert : function(message){
-            var alertTemplate = _.template($('#tpl-alert').html());
-            $('#alert-box').html(alertTemplate({ type : 'error', message : message}));
         }
     });
     window.Views.Footer = footer;

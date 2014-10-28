@@ -28,4 +28,7 @@
         urlRoot : '/messages'
     });
     window.Models.Message = message;
+
+    var alert = Backbone.Model.extend({});
+    window.Models.Alert = alert
 })();
