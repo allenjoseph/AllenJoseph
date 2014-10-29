@@ -1,9 +1,9 @@
 (function(){
-    var feed = Backbone.View.extend({
+    Views.Feed = Backbone.View.extend({
 
         tagName : 'div',
 
-        template : _.template(this.$('#tpl-feed').html()),
+        template : template('tpl-feed'),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));
@@ -11,5 +11,4 @@
             return this;
         }
     });
-    window.Views.Feed = feed;
 })();

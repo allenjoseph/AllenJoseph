@@ -1,13 +1,12 @@
 (function(){
-    var socialLink = Backbone.View.extend({
+    Views.SocialLink = Backbone.View.extend({
         tagName : 'li',
 
-        template : _.template(this.$('#tpl-social-link').html()),
+        template : template('tpl-social-link'),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));
             return this;
         }
     });
-    window.Views.SocialLink = socialLink;
 })();

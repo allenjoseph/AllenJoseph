@@ -1,11 +1,11 @@
 (function(){
-    var section = Backbone.View.extend({
+    Views.Section = Backbone.View.extend({
 
         tagName : 'div',
 
         className : 'row section-box',
 
-        template : _.template(this.$('#tpl-section').html()),
+        template : template('tpl-section'),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));
@@ -13,5 +13,4 @@
             return this;
         }
     });
-    window.Views.Section = section;
 })();

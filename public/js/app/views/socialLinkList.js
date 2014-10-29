@@ -1,5 +1,5 @@
 (function(){
-    var socialLinkList = Backbone.View.extend({
+    Views.SocialLinkList = Backbone.View.extend({
 
         el : '#content-social-links',
 
@@ -13,6 +13,7 @@
             this.collection.each(function(socialLink){
                 this.renderSocialLink(socialLink);
             }, this);
+            return this;
         },
 
         renderSocialLink : function( socialLink ){
@@ -21,5 +22,4 @@
         },
 
     });
-    window.Views.SocialLinkList = socialLinkList;
 })();

@@ -1,5 +1,5 @@
 (function(){
-    var video = Backbone.View.extend({
+    Views.Video = Backbone.View.extend({
 
         tagName : 'div',
 
@@ -24,5 +24,4 @@
         }
 
     });
-    window.Views.Video = video;
 })();

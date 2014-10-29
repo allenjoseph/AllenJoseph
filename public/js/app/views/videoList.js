@@ -1,5 +1,5 @@
 (function(){
-    var videoList = Backbone.View.extend({
+    Views.VideoList = Backbone.View.extend({
 
         el : '#content-videos',
 
@@ -13,6 +13,7 @@
             this.collection.each(function(video){
                 this.renderVideo(video);
             }, this);
+            return this;
         },
 
         renderVideo : function( video ){
@@ -21,5 +22,4 @@
         }
 
     });
-    window.Views.VideoList = videoList;
 })();

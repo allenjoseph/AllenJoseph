@@ -1,24 +1,22 @@
 (function(){
-    var alert = Backbone.View.extend({
+    Views.Alert = Backbone.View.extend({
 
         el: '#alert-box',
 
-        template : _.template(this.$('#tpl-alert').html()),
+        template : template('tpl-alert'),
 
         events : {
             'click .close' : 'close'
         },
 
         initialize : function(){
-            var self = this;
-            this.model.on('change', function(){
-                self.render();
-            })
+            this.model.on('change', this.render, this)
             this.render();
         },
 
         render: function(){
             this.$el.html(this.template(this.model.attributes));
+            return this;
         },
 
         close : function(){
@@ -26,5 +24,4 @@
         }
 
     });
-    window.Views.Alert = alert;
 })();

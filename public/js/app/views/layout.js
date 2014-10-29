@@ -1,5 +1,5 @@
 (function(){
-    var layout = Backbone.View.extend({
+    Views.Layout = Backbone.View.extend({
 
         el : 'body',
 
@@ -16,5 +16,4 @@
             });
         }
     });
-    window.Views.Layout = layout;
 })();

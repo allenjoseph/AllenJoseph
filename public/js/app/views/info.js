@@ -1,9 +1,9 @@
 (function(){
-    var info = Backbone.View.extend({
+    Views.Info = Backbone.View.extend({
 
         el : '#content-info',
 
-        template : _.template(this.$('#tpl-info').html()),
+        template : template('tpl-info'),
 
         initialize : function(){
             $('#section-title label').html(this.model.attributes.title);
@@ -16,5 +16,4 @@
             return this;
         }
     });
-    window.Views.Info = info;
 })();

@@ -1,13 +1,12 @@
 (function(){
-    var feedMini = Backbone.View.extend({
+    Views.FeedMini = Backbone.View.extend({
         tagName : 'li',
 
-        template : _.template(this.$('#tpl-feed-mini').html()),
+        template : template('tpl-feed-mini'),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));
             return this;
         }
     });
-    window.Views.FeedMini = feedMini;
 })();

@@ -1,5 +1,5 @@
 (function(){
-    var footer =  Backbone.View.extend({
+    Views.Footer =  Backbone.View.extend({
 
         el : '#content-footer-form',
 
@@ -7,7 +7,7 @@
             'submit form' : 'sendMessage'
         },
 
-        template : _.template($('#tpl-footer').html()),
+        template : template('tpl-footer'),
 
         initialize : function(){
             this.render();
@@ -20,11 +20,15 @@
 
         sendMessage : function(e){
             e.preventDefault();
-
             var self = this;
-            this.$el.find('button.btn-submit').prop('disabled', true);
-            var emailValue = $.trim(this.$el.find('#inputEmail').val());
-            var messageValue = $.trim(this.$el.find('#textAreaMessage').val());
+            var $email = this.$el.find('#inputEmail');
+            var $message = this.$el.find('#textAreaMessage');
+            var $submit = this.$el.find('button.btn-submit');
+
+
+            $submit.prop('disabled', true);
+            var emailValue = $.trim($email.val());
+            var messageValue = $.trim($message.val());
 
             if(emailValue && messageValue){
 
@@ -38,22 +42,21 @@
                         alert.set('message',success.thanks);
                         alert.set('type','success');
                     }
-                    self.$el.find('#inputEmail').val("");
-                    self.$el.find('#textAreaMessage').val("");
-                    self.$el.find('button.btn-submit').prop('disabled', false);
+                    $email.val("");
+                    $message.val("");
+                    $submit.prop('disabled', false);
                 },function(fail){
                     if(fail && fail.error){
                         alert.set('message',fail.error);
                         alert.set('type','error');
                     }
-                    self.$el.find('button.btn-submit').prop('disabled', false);
+                    $submit.prop('disabled', false);
                 });
             }else{
-                this.$el.find('#inputEmail').val(emailValue);
-                this.$el.find('#textAreaMessage').val(messageValue);
-                this.$el.find('button.btn-submit').prop('disabled', false);
+                $email.val(emailValue);
+                $message.val(messageValue);
+                $submit.prop('disabled', false);
             }
         }
     });
-    window.Views.Footer = footer;
 })();

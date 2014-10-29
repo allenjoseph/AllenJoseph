@@ -1,5 +1,5 @@
 (function(){
-    var sectionList = Backbone.View.extend({
+    Views.SectionList = Backbone.View.extend({
 
         el : '#content-sections',
 
@@ -30,5 +30,4 @@
             }, this);
         }
     });
-    window.Views.SectionList = sectionList;
 })();

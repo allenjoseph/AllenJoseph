@@ -1,5 +1,5 @@
 (function(){
-    var skillList = Backbone.View.extend({
+    Views.SkillList = Backbone.View.extend({
 
         el : '#content-skills',
 
@@ -13,6 +13,7 @@
             this.collection.each(function(skill){
                 this.renderSkill(skill);
             }, this);
+            return this;
         },
 
         renderSkill : function( skill ){
@@ -21,5 +22,4 @@
         }
 
     });
-    window.Views.SkillList = skillList;
 })();

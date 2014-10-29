@@ -1,5 +1,5 @@
 (function(){
-    var menu = Backbone.View.extend({
+    Views.Menu = Backbone.View.extend({
 
         tagName : 'li',
 
@@ -7,7 +7,7 @@
             'click' : 'clickMenu'
         },
 
-        template : _.template(this.$('#tpl-nav').html()),
+        template : template('tpl-nav'),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));
@@ -23,5 +23,4 @@
         }
 
     });
-    window.Views.Menu = menu;
 })();

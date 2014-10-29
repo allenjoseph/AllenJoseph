@@ -1,5 +1,5 @@
 (function(){
-    var menuList = Backbone.View.extend({
+    Views.MenuList = Backbone.View.extend({
 
         el : '#content-menus',
 
@@ -13,6 +13,7 @@
             this.collection.each(function(menu){
                 this.renderMenu(menu);
             }, this);
+            return this;
         },
 
         renderMenu : function( menu ){
@@ -21,5 +22,4 @@
         }
 
     });
-    window.Views.MenuList = menuList;
 })();
