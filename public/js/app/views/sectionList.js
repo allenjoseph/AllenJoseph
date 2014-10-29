@@ -15,7 +15,7 @@
             if( section.attributes.articles &&
                 section.attributes.articles.length > 0){
                 app.collections.videos = new window.Collections.Videos(section.attributes.articles);
-                app.views.VideoList = new window.Views.VideoList({collection : app.collections.videos});
+                app.views.videoList = new window.Views.VideoList({collection : app.collections.videos});
             }
             if( section.attributes.skills &&
                 section.attributes.skills.length > 0){
