@@ -17,7 +17,7 @@
         },
 
         renderSkill : function( skill ){
-            var view = new window.Views.Skill({ model : skill });
+            var view = new Views.Skill({ model : skill });
             this.$el.append(view.render().el);
         }
 

@@ -9,18 +9,18 @@
         },
 
         renderSection : function(section){
-            var view = new window.Views.Section({ model : section });
+            var view = new Views.Section({ model : section });
             this.$el.append(view.render().el);
 
             if( section.attributes.articles &&
                 section.attributes.articles.length > 0){
-                app.collections.videos = new window.Collections.Videos(section.attributes.articles);
-                app.views.videoList = new window.Views.VideoList({collection : app.collections.videos});
+                app.collections.videos = new Collections.Videos(section.attributes.articles);
+                app.views.VideoList = new Views.VideoList({collection : app.collections.videos});
             }
             if( section.attributes.skills &&
                 section.attributes.skills.length > 0){
-                app.collections.skills = new window.Collections.Skills(section.attributes.skills);
-                app.views.skillList = new window.Views.SkillList({collection : app.collections.skills});
+                app.collections.skills = new Collections.Skills(section.attributes.skills);
+                app.views.skillList = new Views.SkillList({collection : app.collections.skills});
             }
         },
 

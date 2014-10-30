@@ -45,6 +45,7 @@ module.exports = function(grunt) {
                         'public/js/app/views/skillList.js',
                         'public/js/app/views/video.js',
                         'public/js/app/views/videoList.js',
+                        'public/js/app/views/alert.js',
                         'public/js/app/views/layout.js',
                         'public/js/app/routers/routers.js',
                         'public/js/app/app.js'

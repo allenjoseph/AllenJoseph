@@ -17,7 +17,7 @@
         },
 
         renderVideo : function( video ){
-            var view = new window.Views.Video({ model : video });
+            var view = new Views.Video({ model : video });
             this.$el.append(view.render().el);
         }
 

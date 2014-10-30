@@ -5,7 +5,7 @@
 
         className : 'col-md-3',
 
-        template : template('tpl-skill'),
+        template : _.template(this.$('#tpl-skill').html()),
 
         render : function(){
             this.$el.html(this.template(this.model.attributes));

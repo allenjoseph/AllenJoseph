@@ -17,7 +17,7 @@
         },
 
         renderSocialLink : function( socialLink ){
-            var view = new window.Views.SocialLink({ model : socialLink });
+            var view = new Views.SocialLink({ model : socialLink });
             this.$el.append(view.render().el);
         },
 

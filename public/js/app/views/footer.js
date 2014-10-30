@@ -32,9 +32,9 @@
 
             if(emailValue && messageValue){
 
-                var message =  new window.Models.Message({ email : emailValue, message : messageValue});
-                var alert = new window.Models.Alert({ type : 'warning',message : 'Enviando tu saludo...'});
-                var alertView = new window.Views.Alert({ model : alert });
+                var message =  new Models.Message({ email : emailValue, message : messageValue});
+                var alert = new Models.Alert({ type : 'warning',message : 'Enviando tu saludo...'});
+                var alertView = new Views.Alert({ model : alert });
 
                 var xhr = message.save();
                 xhr.then(function(success){

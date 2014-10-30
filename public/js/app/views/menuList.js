@@ -17,7 +17,7 @@
         },
 
         renderMenu : function( menu ){
-            var view = new window.Views.Menu({ model : menu });
+            var view = new Views.Menu({ model : menu });
             this.$el.append(view.render().el);
         }
 
