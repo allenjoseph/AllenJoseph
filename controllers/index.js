@@ -21,6 +21,8 @@ var indexController = function(app){
         var params = {
             'app' : {
                 'name' : 'Allen Joseph',
+                'description' : 'Allen Joseph Velasco Arias - Ingeniero en Informática y Desarrollador FrontEnd',
+                'keywords' : 'Allen Joseph Velasco Arias, allenjoseph, Peru, Lima, Piura, developer, frontend, desarrollador, backend, javascript, html5',
                 'enviroment' : app.get('enviroment')
             }
         };

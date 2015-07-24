@@ -10,6 +10,7 @@
     window.app.routers = {};
 
     window.template = function(id){
+        debugger;
         return _.template( $( '#' + id ).html() );
     };
 })();
