@@ -12,6 +12,7 @@ var indexController = function(app){
     app.use( function (req, res, next) {
         res.status(404)
         res.redirect('/home');
+        return;
     })
 
     app.get('/', function(req, res){
