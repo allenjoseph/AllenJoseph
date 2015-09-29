@@ -10,14 +10,6 @@ var http = require('http'),
 var indexController = function(app){
 
     app.get('/', function(req, res){
-        res.redirect('/home');
-    });
-
-    app.all('/home/*', function(req, res){
-        res.redirect('/home');
-    })
-
-    app.get('/home', function(req, res){
         var params = {
             'app' : {
                 'name' : 'Allen Joseph',
@@ -26,8 +18,8 @@ var indexController = function(app){
                 'enviroment' : app.get('enviroment')
             }
         };
-		res.render('home',params);
-	});
+        res.render('home',params);
+    });
 
     app.get('/data', function(req, res){
         App.findOne( { name : 'home' } )
@@ -79,7 +71,7 @@ var indexController = function(app){
     });
 
     app.get('/*', function(req, res){
-        res.redirect('/home');
+        res.redirect('/');
     });
 };
 
