@@ -1,7 +1,7 @@
 var express = require('express'),
-    swig = require('swig'),
-    bodyParser = require('body-parser'),
-    app = express();
+swig = require('swig'),
+bodyParser = require('body-parser'),
+app = express();
 
 /* CONFIGURACION DE LAS VISTAS */
 app.engine( 'html', swig.renderFile );
@@ -25,7 +25,7 @@ messageController(app);
 
 /*-------------------------------------------------*/
 app.listen(3030,function(){
-    console.log("Running App : AllenJoseph");
-    console.log("Listen in port : 3030");
-    console.log("Enviroment : ",app.get('enviroment'));
+	console.log("Running App : AllenJoseph");
+	console.log("Listen in port : 3030");
+	console.log("Enviroment : ",app.get('enviroment'));
 });
