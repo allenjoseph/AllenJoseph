@@ -4,9 +4,22 @@
   "description": "AllenJoseph website",
   "author": "Allen Joseph",
   "dependencies": {
-    "jquery": null,
-    "slick-carousel": null,
-    "underscore":null,
-    "backbone":null
+    "font-awesome": "^4.5.0",
+    "angular": "^1.5.2",
+    "foundation-sites": "^6.2.0",
+    "slick-carousel": "^1.5.9"
+  },
+  "devDependencies": {},
+  "overrides": {
+    "foundation-sites": {
+      "main": [
+        "dist/foundation.min.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
   }
 }
