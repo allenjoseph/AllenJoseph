@@ -22,6 +22,9 @@
 					'' : {
 						templateUrl: 'home/home.html',
 						controller: 'Home as vm'
+					},
+					'header': {
+						templateUrl: 'layout/header.html',
 					}
 				}
 			});

@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var bowerFiles = require('main-bower-files');
 var del = require('del');
+var runSequence = require('run-sequence');
 var $ = require('gulp-load-plugins')({lazy: true});
 
 var ext = {
@@ -16,6 +17,7 @@ var config = {
 		index: './dist/index.html',
 		js: './dist/js/',
 		css: './dist/css/',
+		assets: './dist/assets/',
 		vendor: './dist/bower_components/',
 		vendorJsOrder: [
 			'./dist/bower_components/angular.js',
@@ -27,13 +29,14 @@ var config = {
 		js: './client/app/**/*.js',
 		css: './client/css/**/*.css',
 		html: './client/app/**/*.html',
-		fonts: './bower_components/font-awesome/fonts/*.*',
+		assets: './client/assets/**/*.*',
 		jsOrder: [
 			'./client/app/**/app.modules.js',
-			'./client/app/**/*.module.js',
+			'./client/app/**/app.*.js',
 			'./client/app/**/*.js'
 		]
-	}
+	},
+	vendor: './bower_components/'
 };
 
 gulp.task('jshint', function() {
@@ -49,31 +52,37 @@ gulp.task('clean', function(done) {
 	return del(config.dist.root, done);
 });
 
-gulp.task('copy:vendor', ['clean'], function(){
+gulp.task('copy:assets', function(){
+	return gulp
+	.src(config.client.assets)
+	.pipe(gulp.dest(config.dist.assets));
+});
+
+gulp.task('copy:vendor', function(){
 	return gulp
 	.src(bowerFiles(), { base: './bower_components' })
 	.pipe(gulp.dest(config.dist.vendor));
 });
 
-gulp.task('copy:fonts', ['copy:vendor'], function(){
+gulp.task('copy:fonts', function(){
 	return gulp
-	.src(config.client.fonts)
-	.pipe(gulp.dest(config.dist.vendor + 'fonts'));
+	.src(config.vendor + '**/*.{eot,svg,ttf,woff,woff2}')
+	.pipe(gulp.dest(config.dist.vendor));
 });
 
-gulp.task('copy:js', ['copy:fonts'], function(){
+gulp.task('copy:js', function(){
 	return gulp
 	.src(config.client.js)
 	.pipe(gulp.dest(config.dist.js));
 });
 
-gulp.task('copy', ['copy:js'], function(){
+gulp.task('copy', ['copy:vendor', 'copy:fonts', 'copy:js', 'copy:assets'], function(){
 	return gulp
 	.src(config.client.index)
 	.pipe(gulp.dest(config.dist.root));
 });
 
-gulp.task('html2js', ['copy'], function(){
+gulp.task('html2js', function(){
 	return gulp
 	.src(config.client.html)
 	.pipe($.ngHtml2js({moduleName: 'app.partials'}))
@@ -81,7 +90,7 @@ gulp.task('html2js', ['copy'], function(){
 	.pipe(gulp.dest(config.dist.js));
 });
 
-gulp.task('inject:vendor', ['html2js'], function(){
+gulp.task('inject:vendor', function(){
 	return gulp
 	.src(config.dist.index)
 	.pipe($.inject(gulp.src(bowerFiles(), { read: false }),{ name: 'vendor' }))
@@ -110,8 +119,16 @@ gulp.task('connect', function () {
 	});
 });
 
-gulp.task('default', [
-	'jshint',
-	'inject',
-	'connect'
-]);
+gulp.task('build', function() {
+	runSequence(
+		'clean',
+		['copy', 'html2js'],
+		'inject',
+		'connect'
+	);
+});
+
+gulp.task('release', function() {
+});
+
+gulp.task('default', ['release']);
