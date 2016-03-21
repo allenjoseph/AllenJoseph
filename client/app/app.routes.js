@@ -25,6 +25,9 @@
 					},
 					'header': {
 						templateUrl: 'layout/header.html',
+					},
+					'footer': {
+						templateUrl: 'layout/footer.html',
 					}
 				}
 			});

@@ -4,7 +4,8 @@
 	angular
 		.module('app', [
 			'app.partials',
-			'app.routes'
+			'app.routes',
+			'app.data'
 		]);
 
 })();

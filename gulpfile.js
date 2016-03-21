@@ -27,7 +27,7 @@ var config = {
 	client: {
 		index: './client/index.html',
 		js: './client/app/**/*.js',
-		css: './client/css/**/*.css',
+		sass: './client/sass/**/*.scss',
 		html: './client/app/**/*.html',
 		assets: './client/assets/**/*.*',
 		jsOrder: [
@@ -97,18 +97,38 @@ gulp.task('inject:vendor', function(){
 	.pipe(gulp.dest(config.dist.root));
 });
 
-gulp.task('inject:js', ['inject:vendor'], function(){
+gulp.task('inject:js', function(){
 	return gulp
 	.src(config.dist.index)
 	.pipe($.inject(gulp.src(config.dist.js + ext.alljs, config.client.jsOrder), {relative: true}))
 	.pipe(gulp.dest(config.dist.root));
 });
 
-gulp.task('inject', ['inject:js'], function(){
+gulp.task('inject:css', function(){
 	return gulp
 	.src(config.dist.index)
 	.pipe($.inject(gulp.src(config.dist.css + ext.allcss), {relative: true}))
 	.pipe(gulp.dest(config.dist.root));
+});
+
+gulp.task('inject', function() {
+	return runSequence(
+		'inject:vendor',
+		'inject:js',
+		'inject:css'
+	);
+});
+
+gulp.task('sass', function () {
+	return gulp.src(config.client.sass)
+	.pipe($.sass().on('error', $.sass.logError))
+	.pipe(gulp.dest(config.dist.css));
+});
+
+gulp.task('watch', function () {
+	gulp.watch(config.client.sass, ['sass']);
+	gulp.watch(config.client.html, ['html2js']);
+	gulp.watch(config.client.js, ['jshint', 'copy:js']);
 });
 
 gulp.task('connect', function () {
@@ -120,11 +140,13 @@ gulp.task('connect', function () {
 });
 
 gulp.task('build', function() {
-	runSequence(
+	return runSequence(
 		'clean',
 		['copy', 'html2js'],
+		'sass',
 		'inject',
-		'connect'
+		'connect',
+		'watch'
 	);
 });
 
