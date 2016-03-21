@@ -10,6 +10,8 @@
     "grunt-contrib-cssmin": "~1.0.1",
     "grunt-contrib-uglify": "~1.0.1",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.0",
     "gulp-inject": "^4.0.0",
     "gulp-ng-html2js": "^0.2.2",
     "gulp-rename": "^1.2.2",

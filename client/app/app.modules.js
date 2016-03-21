@@ -2,6 +2,9 @@
 	'use strict';
 
 	angular
-		.module('app', []);
+		.module('app', [
+			'app.partials',
+			'app.routes'
+		]);
 
 })();
