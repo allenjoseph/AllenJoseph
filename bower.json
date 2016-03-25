@@ -6,17 +6,19 @@
   "dependencies": {
     "font-awesome": "^4.5.0",
     "angular": "^1.5.2",
-    "foundation-sites": "^6.2.0",
     "slick-carousel": "^1.5.9",
-    "angular-ui-router": "^0.2.18"
+    "angular-ui-router": "^0.2.18",
+    "foundation-apps": "^1.2.0"
   },
   "devDependencies": {},
   "overrides": {
-    "foundation-sites": {
+    /*"foundation-apps": {
       "main": [
-        "dist/foundation.min.css"
+        "dist/css/foundation-apps.min.css",
+        "dist/js/foundation-apps.js",
+        "dist/js/foundation-apps-templates.js"
       ]
-    },
+    },*/
     "font-awesome": {
       "main": [
         "css/font-awesome.min.css"

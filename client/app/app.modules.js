@@ -5,7 +5,9 @@
 		.module('app', [
 			'app.partials',
 			'app.routes',
-			'app.data'
+			'app.data',
+			'ngAnimate',
+			'foundation'
 		]);
 
 })();

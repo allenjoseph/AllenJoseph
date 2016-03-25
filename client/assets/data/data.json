@@ -6,15 +6,14 @@
 	"description": "Ingeniero en Informática y Desarrollador FrontEnd, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, curioso y algo picón, pero consciente de que cada día se aprende algo nuevo.",
 	"direction": "Lima, Peru - Cel: +51 986 344 399",
 	"copyright": "Allen Joseph - 2016",
-	"sections": [
-		{
+	"sections": {
+		"articles": {
 			"_id": "542bb4ee73d2c6c14bd0a520",
 			"id": "section-ocio",
 			"title": "Ocio",
 			"description": "",
 			"_app": "542a383473d2c6c14bd0a511",
-			"skills": [],
-			"articles": [
+			"items": [
 				{
 					"_id": "542a38b773d2c6c14bd0a512",
 					"id": "parkour",
@@ -65,13 +64,13 @@
 				}
 			]
 		},
-		{
+		"skills": {
 			"_id": "542bb4ee73d2c6c14bd0a521",
 			"id": "section-skills",
 			"title": "Skills",
 			"description": "",
 			"_app": "542a383473d2c6c14bd0a511",
-			"skills": [
+			"items": [
 				{
 					"_id": "54375c3473d2c6c14bd0a52d",
 					"name": "Html5",
@@ -176,43 +175,42 @@
 					"textColor": "#ffffff",
 					"_section": "542bb4ee73d2c6c14bd0a521"
 				}
-			],
-			"articles": []
+			]
 		}
-	],
+	},
 	"socials": [
 		{
 			"_id": "542b96a473d2c6c14bd0a51b",
 			"name": "LinkedIn",
-			"icon": "css/img/social/LinkedIn.png",
+			"icon": "assets/img/social/LinkedIn.png",
 			"url": "https://pe.linkedin.com/in/allenjosephvelascoarias",
 			"_app": "542a383473d2c6c14bd0a511"
 		},
 		{
 			"_id": "542b96a473d2c6c14bd0a51d",
 			"name": "Google",
-			"icon": "css/img/social/GooglePlus.png",
+			"icon": "assets/img/social/GooglePlus.png",
 			"url": "https://www.google.com/+AllenJosephVelascoArias",
 			"_app": "542a383473d2c6c14bd0a511"
 		},
 		{
 			"_id": "542b96a473d2c6c14bd0a51e",
 			"name": "Facebook",
-			"icon": "css/img/social/Facebook.png",
+			"icon": "assets/img/social/Facebook.png",
 			"url": "https://www.facebook.com/A11en.Joseph",
 			"_app": "542a383473d2c6c14bd0a511"
 		},
 		{
 			"_id": "542b96a473d2c6c14bd0a51f",
 			"name": "Twitter",
-			"icon": "css/img/social/Twitter.png",
+			"icon": "assets/img/social/Twitter.png",
 			"url": "https://twitter.com/AllenJoseph",
 			"_app": "542a383473d2c6c14bd0a511"
 		},
 		{
 			"_id": "542b96a473d2c6c14bd0a51c",
 			"name": "GitHub",
-			"icon": "css/img/social/GitHub.png",
+			"icon": "assets/img/social/GitHub.png",
 			"url": "https://github.com/allenjoseph",
 			"_app": "542a383473d2c6c14bd0a511"
 		}
