@@ -1,0 +1,12 @@
+<div class="grid-block small-up-1 medium-up-3">
+	<div class="grid-content" ng-repeat="feed in feeds" ng-show="feed.active">
+		<div class="card" ng-bind-html="feed.description"></div>
+	</div>
+</div>
+<div class="grid-block align-center">
+	<a ng-click="vm.changePage(page)" ng-repeat="page in vm.pagination" ng-style="{ margin: '.5em' }">
+		<span class="badge" ng-class="{success: page.active, secondary: !page.active }">
+			{{ $index + 1 }}
+		</span>
+	</a>
+</div>

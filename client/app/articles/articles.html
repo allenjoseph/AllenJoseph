@@ -1,0 +1,8 @@
+<div class="grid-block small-up-1 medium-up-3">
+	<div class="grid-content" ng-repeat="article in data.sections.articles.items">
+		<h3 class="text-center">{{ article.title }}</h3>
+		<a href="#" zf-open="modal-video" ng-click="vm.selectVideo(article)" ng-style="{ display: 'block' }">
+			<img class="thumbnail" ng-src="{{ article.img }}" alt="{{ article.img }}">
+		</a>
+	</div>
+</div>

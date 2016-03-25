@@ -5,26 +5,15 @@
 		</a>
 	</div>
 	<hr/>
-	<div class="grid-block small-up-1 medium-up-3">
-		<div class="grid-content" ng-repeat="article in data.sections.articles.items">
-			<h3 class="text-center">{{ article.title }}</h3>
-			<a href="#" zf-open="modal-video" ng-style="{ display: 'block' }">
-				<img class="thumbnail" ng-src="{{ article.img }}" alt="{{ article.img }}">
-			</a>
-		</div>
-	</div>
+	<div ui-view="feeds"></div>
 	<hr/>
-	<div class="grid-block small-up-1 medium-up-3">
-		<div class="grid-content" ng-repeat="skill in data.sections.skills.items">
-			<div class="dark card">
-				<h3 class="text-center">{{ skill.name }}</h3>
-			</div>
-		</div>
-	</div>
+	<div ui-view="articles"></div>
+	<hr/>
+	<div ui-view="skills"></div>
 	<hr/>
 </div>
-<div id="modal-video" zf-modal="">
-	<a zf-close="" class="close-button">×</a>
-	<h3>I'm a modal!</h3>
-	<button class="button" zf-close="">OK</button>
+<div id="modal-video" zf-modal="" animation-in="slideInDown">
+	<a zf-close="" class="close-button" ng-click="()">×</a>
+	<h3>{{videoSelected.title}}</h3>
+	<iframe width="560" height="315" ng-src="{{videoSelected.url}}" frameborder="0" allowfullscreen></iframe>
 </div>

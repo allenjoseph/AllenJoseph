@@ -8,17 +8,12 @@
     "angular": "^1.5.2",
     "slick-carousel": "^1.5.9",
     "angular-ui-router": "^0.2.18",
-    "foundation-apps": "^1.2.0"
+    "foundation-apps": "^1.2.0",
+    "angular-sanitize": "^1.5.2",
+    "lodash": "^4.6.1"
   },
   "devDependencies": {},
   "overrides": {
-    /*"foundation-apps": {
-      "main": [
-        "dist/css/foundation-apps.min.css",
-        "dist/js/foundation-apps.js",
-        "dist/js/foundation-apps-templates.js"
-      ]
-    },*/
     "font-awesome": {
       "main": [
         "css/font-awesome.min.css"

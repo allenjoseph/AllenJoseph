@@ -16,18 +16,33 @@
 				abstract: true,
 				templateUrl: 'layout/body.html'
 			})
-			.state('layout.home', {
-				url: '/home',
+			.state('body', {
+				parent: 'layout',
 				views: {
-					'' : {
-						templateUrl: 'home/home.html',
-						controller: 'Home as vm'
-					},
 					'header': {
-						templateUrl: 'layout/header.html',
+						templateUrl: 'layout/header.html'
 					},
 					'footer': {
-						templateUrl: 'layout/footer.html',
+						templateUrl: 'layout/footer.html'
+					},
+					'' : {
+						templateUrl: 'home/home.html'
+					}
+				}
+			})
+			.state('body.home', {
+				url: '/home',
+				views: {
+					'feeds': {
+						controller: 'Feeds as vm',
+						templateUrl: 'feeds/feeds.html'
+					},
+					'articles': {
+						controller: 'Articles as vm',
+						templateUrl: 'articles/articles.html'
+					},
+					'skills': {
+						templateUrl: 'skills/skills.html'
 					}
 				}
 			});

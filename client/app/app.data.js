@@ -14,7 +14,7 @@
 			.then(setData);
 
 		$http
-			.get( 'http://es.gizmodo.com/rss')
+			.get( 'http://rss2json.com/api.json?rss_url=http%3A%2F%2Fes.gizmodo.com%2Frss')
 			.then(setFeeds);
 
 		function setData(rpta){
@@ -22,7 +22,8 @@
 		}
 
 		function setFeeds(rpta){
-			$rootScope.feeds = rpta.data;
+			$rootScope.feeds = rpta.data.items;
+			$rootScope.$emit('feedsLoaded');
 		}
 	}
 })();

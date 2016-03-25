@@ -12,8 +12,13 @@
 			<p><i class="fa fa-map-marker"></i>&nbsp;{{ data.direction }}</p>
 		</div>
 	</div>
-	<div class="medium-4 grid-block">
+	<div class="medium-3 grid-block">
 		<div class="grid-content">
+			<ul class="feeds-titles-box">
+				<li ng-repeat="feed in feeds">
+					<a ng-href="{{ feed.link }}" target="_blank">{{ feed.title }}</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
