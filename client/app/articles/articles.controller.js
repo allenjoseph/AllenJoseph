@@ -10,12 +10,5 @@
 	function Articles($rootScope, $sce){
 
 		var vm = this;
-
-		vm.selectVideo = function(video){
-
-			video.url = $sce.trustAsResourceUrl(video.url);
-
-			$rootScope.videoSelected = video;
-		};
 	}
 })();

@@ -7,13 +7,8 @@
 	<hr/>
 	<div ui-view="feeds"></div>
 	<hr/>
-	<div ui-view="articles"></div>
-	<hr/>
 	<div ui-view="skills"></div>
 	<hr/>
-</div>
-<div id="modal-video" zf-modal="" animation-in="slideInDown">
-	<a zf-close="" class="close-button" ng-click="()">×</a>
-	<h3>{{videoSelected.title}}</h3>
-	<iframe width="560" height="315" ng-src="{{videoSelected.url}}" frameborder="0" allowfullscreen></iframe>
+	<div ui-view="articles"></div>
+	<hr/>
 </div>
