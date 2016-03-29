@@ -9,10 +9,6 @@
 
 	function jPlayer($http, $interval){
 
-		var urls = {
-			currentTrack: 'http://www.shoutcast.com/Player/GetCurrentTrack'
-		};
-
 		var station = {
 			ID: 8318,
 			name: 'HOT 108 JAMZ',
@@ -73,10 +69,10 @@
 			function getCurrentTrack() {
 
 				$http
-					.post(urls.currentTrack, { stationID: station.ID })
-					.then(function(data) {
+					.get('currentTrack')
+					.then(function(track) {
 
-						scope.currentTrack = data.CurrentTrack;
+						scope.currentTrack = track.data.Station.CurrentTrack || station.name;
 					})
 					.catch(function(){
 
