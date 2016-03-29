@@ -1,0 +1,10 @@
+<div class="player"></div>
+<div class="player-info">
+	<a ng-show="!muted" ng-click="mute()">
+		<i class="fa fa-volume-up"></i>
+	</a>
+	<a ng-show="muted" ng-click="unmute()">
+		<i class="fa fa-volume-off"></i>
+	</a>
+	<span class="msl">{{currentTrack}}</span>
+</div>
