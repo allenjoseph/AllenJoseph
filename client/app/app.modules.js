@@ -8,7 +8,8 @@
 			'app.routes',
 			'app.data',
 			'ngAnimate',
-			'foundation'
+			'foundation',
+			'app.widgets'
 		]);
 
 })();

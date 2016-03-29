@@ -5,12 +5,13 @@
   "author": "Allen Joseph",
   "dependencies": {
     "font-awesome": "^4.5.0",
-    "angular": "^1.5.2",
+    "angular": "^1.5.3",
     "slick-carousel": "^1.5.9",
     "angular-ui-router": "^0.2.18",
     "foundation-apps": "^1.2.0",
-    "angular-sanitize": "^1.5.2",
-    "lodash": "^4.6.1"
+    "angular-sanitize": "^1.5.3",
+    "lodash": "^4.6.1",
+    "jPlayer": "jplayer#^2.9.2"
   },
   "devDependencies": {},
   "overrides": {
@@ -19,5 +20,8 @@
         "css/font-awesome.min.css"
       ]
     }
+  },
+  "resolutions": {
+    "angular": "1.5.3"
   }
 }
