@@ -3,6 +3,7 @@ var bowerFiles = require('main-bower-files');
 var del = require('del');
 var runSequence = require('run-sequence');
 var $ = require('gulp-load-plugins')({lazy: true});
+var removeDirectories = require('remove-empty-directories');
 
 var ext = {
 	alljs: '**/*.js',
@@ -19,9 +20,11 @@ var config = {
 		css: './dist/css/',
 		assets: './dist/assets/',
 		vendor: './dist/bower_components/',
-		vendorJsOrder: [
-			'./dist/bower_components/angular.js',
-			'./dist/bower_components/*.js'
+		min: './dist/min/',
+		release: [
+			'./dist/js/app.modules.js',
+			'./dist/js/app.*.js',
+			'./dist/js/**/*.js'
 		]
 	},
 	client: {
@@ -51,6 +54,17 @@ gulp.task('jshint', function() {
 gulp.task('clean', function(done) {
 	return del(config.dist.root, done);
 });
+
+gulp.task('clean:release', function(done) {
+	return del([
+		config.dist.root + ext.alljs,
+		'!' + config.dist.root + 'allenjoseph.min.js',
+	], done);
+});
+
+gulp.task('clean:directories', function(){
+	return removeDirectories(config.dist.root);
+})
 
 gulp.task('copy:assets', function(){
 	return gulp
@@ -119,10 +133,28 @@ gulp.task('inject', function() {
 	);
 });
 
+gulp.task('inject:release', function() {
+	return gulp
+	.src(config.dist.index)
+	.pipe($.inject(gulp.src(config.dist.root + ext.alljs), {relative: true}))
+	.pipe($.inject(gulp.src(config.dist.root + ext.allcss), {relative: true}))
+	.pipe(gulp.dest(config.dist.root));
+});
+
 gulp.task('sass', function () {
-	return gulp.src(config.client.sass)
+	return gulp
+	.src(config.client.sass)
 	.pipe($.sass().on('error', $.sass.logError))
 	.pipe(gulp.dest(config.dist.css));
+});
+
+gulp.task('compress', function(){
+	var lib = require('bower-files')();
+	return gulp
+	.src(lib.ext('js').files.concat(config.dist.release))
+	.pipe($.concat('allenjoseph.min.js'))
+	.pipe($.uglify())
+	.pipe(gulp.dest(config.dist.root));
 });
 
 gulp.task('watch', function () {
@@ -151,6 +183,15 @@ gulp.task('build', function() {
 });
 
 gulp.task('release', function() {
+	return runSequence(
+		'clean',
+		['copy', 'html2js'],
+		'compress',
+		'sass',
+		'clean:release',
+		'clean:directories',
+		'inject:release'
+	);
 });
 
 gulp.task('default', ['release']);
