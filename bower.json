@@ -1,5 +1,5 @@
 {
-  "name": "AllenJoseph.pe",
+  "name": "allenjoseph.pe",
   "version": "0.0.1",
   "description": "AllenJoseph website",
   "author": "Allen Joseph",
@@ -22,6 +22,6 @@
     }
   },
   "resolutions": {
-    "angular": "1.5.3"
+    "angular": "1.5.4"
   }
 }
