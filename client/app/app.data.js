@@ -10,11 +10,11 @@
 	function run($http, $rootScope){
 
 		$http
-			.get('/assets/data/data.json')
+			.get('data')
 			.then(setData);
 
 		$http
-			.get( 'http://rss2json.com/api.json?rss_url=http%3A%2F%2Fes.gizmodo.com%2Frss')
+			.get( 'feeds')
 			.then(setFeeds);
 
 		function setData(rpta){

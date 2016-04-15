@@ -12,6 +12,7 @@ app.set( 'views', __dirname + '/views' );
 app.use( express.static(__dirname + '/dist') );
 app.use( bodyParser.urlencoded({ extended: false }));
 app.use( bodyParser.json() );
+app.rootPath = __dirname;
 
 /* Controllers ------------------------------------*/
 var mainController = require('./controllers/main'),
