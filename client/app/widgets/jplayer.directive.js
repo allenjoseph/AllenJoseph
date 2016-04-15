@@ -35,7 +35,7 @@
 				ready: startStream,
 				solution: 'html',
 				supplied: 'mp3',
-				volume: 1,
+				volume: 0.2,
 				wmode: 'window'
 			});
 

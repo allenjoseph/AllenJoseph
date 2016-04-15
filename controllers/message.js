@@ -1,9 +1,8 @@
-var express = require('express'),
-Message = require('../models/message');
+module.exports = messageController;
 
-var messageController = function(app){
+function messageController (app) {
 
-	var messages = express.Router()
+	/*var messages = express.Router()
 
 	.post('/',function(req, res, next){
 		var message = new Message({
@@ -16,7 +15,5 @@ var messageController = function(app){
 		});
 	});
 
-	app.use('/messages', messages);
+	app.use('/messages', messages);*/
 };
-
-module.exports = messageController;
