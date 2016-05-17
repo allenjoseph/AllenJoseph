@@ -96,6 +96,22 @@
 					"_section": "542bb4ee73d2c6c14bd0a521"
 				},
 				{
+					"_id": "5435d8fa73d2c6c14bd0a550",
+					"name": "Grunt",
+					"description":"",
+					"background": "#e48632",
+					"textColor":" #ffffff",
+					"_section": "542bb4ee73d2c6c14bd0a521"
+				},
+				{
+					"_id": "5435d8fa73d2c6c14bd0a551",
+					"name": "Git",
+					"description":"",
+					"background": "#ef391a",
+					"textColor": "#4e443c",
+					"_section": "542bb4ee73d2c6c14bd0a521"
+				},
+				{
 					"_id": "5435d8fa73d2c6c14bd0a524",
 					"name": "Java",
 					"description": "",
