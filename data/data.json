@@ -3,7 +3,7 @@
 	"name": "home",
 	"title": "Allen Joseph",
 	"slogan": "Let your passion speak",
-	"description": "Ingeniero en Informática y Desarrollador FrontEnd, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, curioso y algo picón, pero consciente de que cada día se aprende algo nuevo.",
+	"description": "Ingeniero en Informática y Desarrollador FrontEnd, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, comprometido con lo que haga y consciente de que cada día se aprende algo nuevo.",
 	"direction": "Lima, Peru - Cel: +51 986 344 399",
 	"copyright": "Allen Joseph - 2016",
 	"sections": {
@@ -25,9 +25,9 @@
 				{
 					"_id": "542a38b773d2c6c14bd0a513",
 					"id": "tricks",
-					"title": "Tricks",
-					"url": "//www.youtube.com/embed/rZW2bT4Hp0U?rel=0",
-					"img": "https://img.youtube.com/vi/rZW2bT4Hp0U/0.jpg",
+					"title": "Angular 2 Force Awakens",
+					"url": "//www.youtube.com/embed/WAPQF_GA7Qg",
+					"img": "https://img.youtube.com/vi/WAPQF_GA7Qg/0.jpg",
 					"_section": "542a38ec73d2c6c14bd0a51a"
 				},
 				{
@@ -41,9 +41,9 @@
 				{
 					"_id": "542a38b773d2c6c14bd0a515",
 					"id": "skate",
-					"title": "Skateboarding",
-					"url": "//www.youtube.com/embed/4ZWy5a646XM?rel=0",
-					"img": "https://img.youtube.com/vi/4ZWy5a646XM/0.jpg",
+					"title": "Async Programming in ES7",
+					"url": "//www.youtube.com/embed/lil4YCCXRYc",
+					"img": "https://img.youtube.com/vi/lil4YCCXRYc/0.jpg",
 					"_section": "542a38ec73d2c6c14bd0a51a"
 				},
 				{
