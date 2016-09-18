@@ -4,7 +4,8 @@
   "description": "Profile Web Page",
   "author": "Allen Joseph",
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+	"release": "gulp release"
   },
   "devDependencies": {
     "bower-files": "^3.11.3",
