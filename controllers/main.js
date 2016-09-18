@@ -6,7 +6,16 @@ module.exports = mainController;
 function mainController (app) {
 
 	app.get('/data', function(req, res){
-		res.sendFile(path.normalize(app.rootPath + '/data/data.json'));
+		request.get({
+			url: 'https://allenjoseph-pe-51a90.firebaseio.com/data.json'
+		}, function(error, response, body){
+			if (!error && response.statusCode == 200) {
+				res.json(JSON.parse(body));
+			}else{
+				res.status(500).send('Error :(');
+			}
+		});
+		//res.sendFile(path.normalize(app.rootPath + '/data/data.json'));
 	});
 
 	app.get('/feeds', function(req, res){
@@ -16,7 +25,7 @@ function mainController (app) {
 			if (!error && response.statusCode == 200) {
 				res.json(JSON.parse(body));
 			}else{
-				res.status(500).send('Error :(')
+				res.status(500).send('Error :(');
 			}
 		});
 	});
@@ -29,7 +38,7 @@ function mainController (app) {
 			if (!error && response.statusCode == 200) {
 				res.json(JSON.parse(body));
 			}else{
-				res.status(500).send('Error :(')
+				res.status(500).send('Error :(');
 			}
 		});
 	});

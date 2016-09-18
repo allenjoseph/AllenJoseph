@@ -4,6 +4,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var $ = require('gulp-load-plugins')({lazy: true});
 var removeDirectories = require('remove-empty-directories');
+var proxy = require('http-proxy-middleware');
 
 var ext = {
 	alljs: '**/*.js',
@@ -167,7 +168,19 @@ gulp.task('connect', function () {
 	$.connect.server({
 		root: ['dist'],
 		port: 8000,
-		livereload: true
+		livereload: true,
+		middleware: function(connect, o){
+			return [
+				proxy('/data', {
+					target: 'http://localhost:3030',
+					changeOrigin: true
+				}),
+				proxy('/feeds', {
+					target: 'http://localhost:3030',
+					changeOrigin: true
+				})
+			];
+		}
 	});
 });
 

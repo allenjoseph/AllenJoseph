@@ -1,252 +1,191 @@
 {
-	"_id": "542a383473d2c6c14bd0a511",
-	"name": "home",
-	"title": "Allen Joseph",
-	"slogan": "Let your passion speak",
-	"description": "Ingeniero en Informática y Desarrollador FrontEnd, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, comprometido con lo que haga y consciente de que cada día se aprende algo nuevo.",
-	"direction": "Lima, Peru - Cel: +51 986 344 399",
-	"copyright": "Allen Joseph - 2016",
-	"sections": {
-		"articles": {
-			"_id": "542bb4ee73d2c6c14bd0a520",
-			"id": "section-ocio",
-			"title": "Ocio",
-			"description": "",
-			"_app": "542a383473d2c6c14bd0a511",
-			"items": [
-				{
-					"_id": "542a38b773d2c6c14bd0a512",
-					"id": "parkour",
-					"title": "Parkour",
-					"url": "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
-					"img": "https://img.youtube.com/vi/VB4uzs_C8dU/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				},
-				{
-					"_id": "542a38b773d2c6c14bd0a513",
-					"id": "tricks",
-					"title": "Angular 2 Force Awakens",
-					"url": "//www.youtube.com/embed/WAPQF_GA7Qg",
-					"img": "https://img.youtube.com/vi/WAPQF_GA7Qg/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				},
-				{
-					"_id": "542a38b773d2c6c14bd0a514",
-					"id": "breakdance",
-					"title": "BreakDance",
-					"url": "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
-					"img": "https://img.youtube.com/vi/37pwbUp8t1I/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				},
-				{
-					"_id": "542a38b773d2c6c14bd0a515",
-					"id": "skate",
-					"title": "Async Programming in ES7",
-					"url": "//www.youtube.com/embed/lil4YCCXRYc",
-					"img": "https://img.youtube.com/vi/lil4YCCXRYc/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				},
-				{
-					"_id": "542a38b773d2c6c14bd0a516",
-					"id": "powermoves",
-					"title": "Powermoves",
-					"url": "//www.youtube.com/embed/QtozCIPWqpc?rel=0",
-					"img": "https://img.youtube.com/vi/QtozCIPWqpc/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				},
-				{
-					"_id": "542a38b773d2c6c14bd0a517",
-					"id": "fun",
-					"title": "Fun to imagine",
-					"url": "//www.youtube.com/embed/T7rXTBrQsiY?rel=0",
-					"img": "https://img.youtube.com/vi/T7rXTBrQsiY/0.jpg",
-					"_section": "542a38ec73d2c6c14bd0a51a"
-				}
-			]
+	"data":	{
+		"name": "home",
+		"title": "Allen Joseph",
+		"slogan": "Let your passion speak",
+		"description": "Ingeniero en Informática y Desarrollador FrontEnd, enormemente interesado en el diseño y desarrollo web asi como en lenguajes innovadores, creativos y divertidos. Amante virtual de los deportes de aventura, comprometido con lo que haga y consciente de que cada día se aprende algo nuevo.",
+		"direction": "Lima, Peru - Cel: +51 986 344 399",
+		"copyright": "Allen Joseph - 2016",
+		"sections": {
+			"articles": {
+				"id": "section-ocio",
+				"title": "Ocio",
+				"description": "",
+				"items": [
+					{
+						"id": "parkour",
+						"title": "Parkour",
+						"url": "//www.youtube.com/embed/VB4uzs_C8dU?rel=0",
+						"img": "https://img.youtube.com/vi/VB4uzs_C8dU/0.jpg"
+					},
+					{
+						"id": "tricks",
+						"title": "Angular 2 Force Awakens",
+						"url": "//www.youtube.com/embed/WAPQF_GA7Qg",
+						"img": "https://img.youtube.com/vi/WAPQF_GA7Qg/0.jpg"
+					},
+					{
+						"id": "breakdance",
+						"title": "BreakDance",
+						"url": "//www.youtube.com/embed/37pwbUp8t1I?rel=0",
+						"img": "https://img.youtube.com/vi/37pwbUp8t1I/0.jpg"
+					},
+					{
+						"id": "skate",
+						"title": "Async Programming in ES7",
+						"url": "//www.youtube.com/embed/lil4YCCXRYc",
+						"img": "https://img.youtube.com/vi/lil4YCCXRYc/0.jpg"
+					},
+					{
+						"id": "powermoves",
+						"title": "Powermoves",
+						"url": "//www.youtube.com/embed/QtozCIPWqpc?rel=0",
+						"img": "https://img.youtube.com/vi/QtozCIPWqpc/0.jpg"
+					},
+					{
+						"id": "fun",
+						"title": "Fun to imagine",
+						"url": "//www.youtube.com/embed/T7rXTBrQsiY?rel=0",
+						"img": "https://img.youtube.com/vi/T7rXTBrQsiY/0.jpg"
+					}
+				]
+			},
+			"skills": {
+				"id": "section-skills",
+				"title": "Skills",
+				"description": "",
+				"items": [
+					{
+						"name": "Html5",
+						"description": "",
+						"background": "#E34C26",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "Javascript",
+						"description": "",
+						"background": "#ffdd11",
+						"textColor": "#333333"
+					},
+					{
+						"name": "NodeJS",
+						"description": "",
+						"background": "#99cc66",
+						"textColor": "#444444"
+					},
+					{
+						"name": "Grunt",
+						"description":"",
+						"background": "#e48632",
+						"textColor":" #ffffff"
+					},
+					{
+						"name": "Git",
+						"description":"",
+						"background": "#ef391a",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "Java",
+						"description": "",
+						"background": "#226688",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "SQL",
+						"description": "",
+						"background": "#dddddd",
+						"textColor": "#333333"
+					},
+					{
+						"name": "MongoDB",
+						"description": "",
+						"background": "#402817",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "AngularJS",
+						"description": "",
+						"background": "#000000",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "Backbone.js",
+						"description": "",
+						"background": "#1d2c4d",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "C#",
+						"description": "",
+						"background": "#68217a",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "React",
+						"description": "",
+						"background": "#2d2d2d",
+						"textColor": "#00D8FF"
+					},
+					{
+						"name": "Stylus",
+						"description": "",
+						"background": "#b3d107",
+						"textColor": "#fff"
+					},
+					{
+						"name": "Css3",
+						"description": "",
+						"background": "#1572B6",
+						"textColor": "#ffffff"
+					},
+					{
+						"name": "Django",
+						"description": "",
+						"background": "#0C4B33",
+						"textColor": "#ffffff"
+					}
+				]
+			}
 		},
-		"skills": {
-			"_id": "542bb4ee73d2c6c14bd0a521",
-			"id": "section-skills",
-			"title": "Skills",
-			"description": "",
-			"_app": "542a383473d2c6c14bd0a511",
-			"items": [
-				{
-					"_id": "54375c3473d2c6c14bd0a52d",
-					"name": "Html5",
-					"description": "",
-					"background": "#E34C26",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a523",
-					"name": "Javascript",
-					"description": "",
-					"background": "#ffdd11",
-					"textColor": "#333333",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a525",
-					"name": "NodeJS",
-					"description": "",
-					"background": "#99cc66",
-					"textColor": "#444444",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a550",
-					"name": "Grunt",
-					"description":"",
-					"background": "#e48632",
-					"textColor":" #ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a551",
-					"name": "Git",
-					"description":"",
-					"background": "#ef391a",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a524",
-					"name": "Java",
-					"description": "",
-					"background": "#226688",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a529",
-					"name": "SQL",
-					"description": "",
-					"background": "#dddddd",
-					"textColor": "#333333",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a52c",
-					"name": "MongoDB",
-					"description": "",
-					"background": "#402817",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a527",
-					"name": "AngularJS",
-					"description": "",
-					"background": "#000000",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a526",
-					"name": "Backbone.js",
-					"description": "",
-					"background": "#1d2c4d",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5435d8fa73d2c6c14bd0a528",
-					"name": "C#",
-					"description": "",
-					"background": "#68217a",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "5594b5ea5c9a51d3e44fda04",
-					"name": "React",
-					"description": "",
-					"background": "#2d2d2d",
-					"textColor": "#00D8FF",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "560337b8a598fc0071a04fc1",
-					"name": "Stylus",
-					"description": "",
-					"background": "#b3d107",
-					"textColor": "#fff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "560af23f28713aaaa7d2f73c",
-					"name": "Css3",
-					"description": "",
-					"background": "#1572B6",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				},
-				{
-					"_id": "560afa1255a866dd5d1f6440",
-					"name": "Django",
-					"description": "",
-					"background": "#0C4B33",
-					"textColor": "#ffffff",
-					"_section": "542bb4ee73d2c6c14bd0a521"
-				}
-			]
-		}
-	},
-	"socials": [
-		{
-			"_id": "542b96a473d2c6c14bd0a51b",
-			"name": "LinkedIn",
-			"icon": "assets/img/social/LinkedIn.png",
-			"url": "https://pe.linkedin.com/in/allenjosephvelascoarias",
-			"_app": "542a383473d2c6c14bd0a511"
-		},
-		{
-			"_id": "542b96a473d2c6c14bd0a51d",
-			"name": "Google",
-			"icon": "assets/img/social/GooglePlus.png",
-			"url": "https://www.google.com/+AllenJosephVelascoArias",
-			"_app": "542a383473d2c6c14bd0a511"
-		},
-		{
-			"_id": "542b96a473d2c6c14bd0a51e",
-			"name": "Facebook",
-			"icon": "assets/img/social/Facebook.png",
-			"url": "https://www.facebook.com/A11en.Joseph",
-			"_app": "542a383473d2c6c14bd0a511"
-		},
-		{
-			"_id": "542b96a473d2c6c14bd0a51f",
-			"name": "Twitter",
-			"icon": "assets/img/social/Twitter.png",
-			"url": "https://twitter.com/AllenJoseph",
-			"_app": "542a383473d2c6c14bd0a511"
-		},
-		{
-			"_id": "542b96a473d2c6c14bd0a51c",
-			"name": "GitHub",
-			"icon": "assets/img/social/GitHub.png",
-			"url": "https://github.com/allenjoseph",
-			"_app": "542a383473d2c6c14bd0a511"
-		}
-	],
-	"menus": [
-		{
-			"_id": "542a38ec73d2c6c14bd0a51a",
-			"href": "section-ocio",
-			"name": "Ocio",
-			"icon": "fa-bolt",
-			"_app": "542a383473d2c6c14bd0a511",
-			"_section": "542bb4ee73d2c6c14bd0a520"
-		},
-		{
-			"_id": "542a38ec73d2c6c14bd0a518",
-			"href": "section-skills",
-			"name": "Skills",
-			"icon": "fa-graduation-cap",
-			"_app": "542a383473d2c6c14bd0a511",
-			"_section": "542bb4ee73d2c6c14bd0a521"
-		}
-	]
+		"socials": [
+			{
+				"name": "LinkedIn",
+				"icon": "assets/img/social/LinkedIn.png",
+				"url": "https://pe.linkedin.com/in/allenjosephvelascoarias"
+			},
+			{
+				"name": "Google",
+				"icon": "assets/img/social/GooglePlus.png",
+				"url": "https://www.google.com/+AllenJosephVelascoArias"
+			},
+			{
+				"name": "Facebook",
+				"icon": "assets/img/social/Facebook.png",
+				"url": "https://www.facebook.com/A11en.Joseph"
+			},
+			{
+				"name": "Twitter",
+				"icon": "assets/img/social/Twitter.png",
+				"url": "https://twitter.com/AllenJoseph"
+			},
+			{
+				"name": "GitHub",
+				"icon": "assets/img/social/GitHub.png",
+				"url": "https://github.com/allenjoseph"
+			}
+		],
+		"menus": [
+			{
+				"href": "section-ocio",
+				"name": "Ocio",
+				"icon": "fa-bolt"
+			},
+			{
+				"href": "section-skills",
+				"name": "Skills",
+				"icon": "fa-graduation-cap"
+			}
+		]
+	}
 }
