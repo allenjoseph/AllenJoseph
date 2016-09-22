@@ -1,5 +1,4 @@
-var request = require('request'),
-	path = require('path');
+var request = require('request');
 
 module.exports = mainController;
 
@@ -15,7 +14,6 @@ function mainController (app) {
 				res.status(500).send('Error :(');
 			}
 		});
-		//res.sendFile(path.normalize(app.rootPath + '/data/data.json'));
 	});
 
 	app.get('/feeds', function(req, res){
