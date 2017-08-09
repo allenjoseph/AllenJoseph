@@ -5,7 +5,7 @@
   "author": "Allen Joseph",
   "scripts": {
     "postinstall": "bower install",
-	"release": "gulp release"
+    "release": "gulp release"
   },
   "devDependencies": {
     "bower-files": "^3.14.1",
