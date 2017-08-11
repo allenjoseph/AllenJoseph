@@ -7,7 +7,6 @@
 			'app.partials',
 			'app.routes',
 			'app.data',
-			'ngAnimate',
 			'foundation',
 			'app.widgets'
 		]);
