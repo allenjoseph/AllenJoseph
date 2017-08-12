@@ -20,7 +20,7 @@ var config = {
 		js: './dist/js/',
 		css: './dist/css/',
 		assets: './dist/assets/',
-		vendor: './dist/bower_components/',
+		vendor: './dist/vendor/',
 		min: './dist/min/',
 		release: [
 			'./dist/js/app.modules.js',
@@ -75,7 +75,7 @@ gulp.task('copy:assets', function(){
 
 gulp.task('copy:vendor', function(){
 	return gulp
-	.src(bowerFiles(), { base: './bower_components' })
+	.src(bowerFiles({includeDev: 'exclusive'}), { base: './bower_components' })
 	.pipe(gulp.dest(config.dist.vendor));
 });
 

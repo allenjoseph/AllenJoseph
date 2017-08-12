@@ -14,5 +14,13 @@
   "resolutions": {
     "angular": "1.6.5",
     "angular-ui-router": "^0.3.1"
+  },
+  "overrides": {
+    "foundation-apps": {
+      "main": [
+        "dist/js/foundation-apps.js",
+        "dist/js/foundation-apps-templates.js"
+      ]
+    }
   }
 }
