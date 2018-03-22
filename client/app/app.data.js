@@ -10,11 +10,11 @@
 	function run($http, $rootScope){
 
 		$http
-			.get('data')
+			.get('https://allenjoseph-pe-51a90.firebaseio.com/data.json')
 			.then(setData);
 
 		$http
-			.get( 'feeds')
+			.get('https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fes.gizmodo.com%2Frss')
 			.then(setFeeds);
 
 		function setData(rpta){

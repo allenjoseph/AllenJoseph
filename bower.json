@@ -4,16 +4,16 @@
   "description": "AllenJoseph website",
   "author": "Allen Joseph",
   "dependencies": {
-    "angular": "^1.5.8",
-    "slick-carousel": "^1.6.0",
-    "angular-ui-router": "^0.3.1",
-    "foundation-apps": "^1.2.0",
-    "angular-sanitize": "^1.5.8"
+    "angular": "1.5.8",
+    "slick-carousel": "1.6.0",
+    "angular-ui-router": "0.3.1",
+    "foundation-apps": "1.2.0",
+    "angular-sanitize": "1.5.8"
   },
   "devDependencies": {},
   "resolutions": {
     "angular": "1.6.5",
-    "angular-ui-router": "^0.3.1"
+    "angular-ui-router": "0.3.1"
   },
   "overrides": {
     "foundation-apps": {

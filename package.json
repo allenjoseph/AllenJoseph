@@ -8,31 +8,31 @@
     "release": "gulp release"
   },
   "devDependencies": {
-    "bower-files": "^3.14.1",
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-angular-filesort": "^1.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^5.0.0",
-    "gulp-inject": "^4.1.0",
-    "gulp-jscs": "^4.0.0",
-    "gulp-jshint": "^2.0.1",
-    "gulp-load-plugins": "^1.3.0",
-    "gulp-ng-html2js": "^0.2.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
-    "jshint": "^2.9.3",
-    "jshint-stylish": "^2.2.1",
-    "main-bower-files": "^2.13.1",
+    "bower-files": "3.14.1",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-angular-filesort": "1.1.1",
+    "gulp-concat": "2.6.0",
+    "gulp-connect": "5.0.0",
+    "gulp-inject": "4.1.0",
+    "gulp-jscs": "4.0.0",
+    "gulp-jshint": "2.0.1",
+    "gulp-load-plugins": "1.3.0",
+    "gulp-ng-html2js": "0.2.2",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.2",
+    "gulp-uglify": "2.0.0",
+    "jshint": "2.9.3",
+    "jshint-stylish": "2.2.1",
+    "main-bower-files": "2.13.1",
     "remove-empty-directories": "0.0.1",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "1.2.2"
   },
   "dependencies": {
-    "body-parser": "~1.15.2",
-    "bower": "^1.7.9",
+    "body-parser": "1.15.2",
+    "bower": "1.7.9",
     "express": "4.x",
-    "http-proxy-middleware": "^0.17.1",
-    "request": "^2.75.0"
+    "http-proxy-middleware": "0.17.1",
+    "request": "2.75.0"
   }
 }
